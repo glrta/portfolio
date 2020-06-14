@@ -6,56 +6,89 @@
     <meta name="description" content="Giovanna's portfolio website">
     <meta name="keywords" content="Full Stack Web developer, Front-end web developer, Sofware developer">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <meta name="theme-color" content="hsl(279, 46%, 51%)">
-    <!-- Tag below changes color of status bar on mobile to match websute color -->
+    <!-- Tag below changes color of status bar on iPhone to match website color -->
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+    <link rel="alternate icon" href="/favicon.ico">
     <link rel="stylesheet" href="styles.css">
-    <title>Portfolio</title>
+    <title>Giovanna Aveiro</title>
 </head>
 <body>
-    <h1>Gio</h1>
-    <aside>
-      <a class="icon" href="https://www.linkedin.com/in/glrta/" target="_blank" title="take me to Gio's LinkedIn page">
-        <svg class="svg-icon" viewBox="0 0 24 24" role="img" aria-hidden="true" focusable="false">
-          <use xlink:href="./assets/icons.svg#linkedin"/>
-        </svg>
-      </a>
-      <a class="icon" href="https://github.com/glrta" target="_blank" title="take me to Gio's GitHub page">
-        <svg class="svg-icon" viewBox="0 0 24 24" role="img" aria-hidden="true" focusable="false">
-          <use xlink:href="./assets/icons.svg#github"/>
-        </svg>
-      </a>
-      <a class="icon" href="https://twitter.com/glrta_gio" target="_blank" title="take me to Gio's Twitter">
-        <svg class="svg-icon" viewBox="0 0 24 24" role="img" aria-hidden="true" focusable="false">
-          <use xlink:href="./assets/icons.svg#twitter"/>
-        </svg>
-      </a>
-      
-      <!-- Should the 'print' be a button? -->
-      <a class="icon" href="#" title="Print this page">
+    <header>
+      <p class="navbar-icon">glrta</p>
+      <div class="menu toggle">
+        <nav class="navbar">
+          <ul>
+            <li><a href="#">about</a></li>
+            <li><a href="#">projects</a></li>
+          </ul>
+        </nav>
+        <aside class="socials">
+          <div>
+            <a class="icon social" href="https://www.linkedin.com/in/glrta/" target="_blank" title="take me to Gio's LinkedIn page">Linkedin
+              <svg class="svg-icon icon" viewBox="0 0 24 24" role="img" aria-hidden="true" focusable="false">
+                <use xlink:href="./assets/icons.svg#linkedin"/>
+              </svg>
+            </a>
+            <p>full resume</p>
+          </div>
+          <div>
+            <a class="icon social" href="https://github.com/glrta" target="_blank" title="take me to Gio's GitHub page">GitHub
+              <svg class="svg-icon" viewBox="0 0 24 24" role="img" aria-hidden="true" focusable="false">
+                <use xlink:href="./assets/icons.svg#github"/>
+              </svg>
+            </a>
+            <p>all my projects</p>
+          </div>
+          <div>
+            <a class="icon social" href="h#" target="_blank" title="take me to Gio's Medium page">Medium
+              <svg class="svg-icon" viewBox="0 0 24 24" role="img" aria-hidden="true" focusable="false">
+                <use xlink:href="./assets/icons.svg#medium"/>
+              </svg>
+            </a>
+            <p>deep thoughts</p>
+          </div>
+          <address>
+            <a href="mailto:to.gio@pm.me?subject=Important!&body=Hi Giovanna," target="_blank">glrta@pm.me
+              <svg class="svg-icon" viewBox="0 0 24 24" role="img" aria-hidden="true" focusable="false">
+                <use xlink:href="./assets/icons.svg#external"/>
+              </svg>
+            </a>
+          </address>
+        </aside>
+      </div>
+      <div class="title">
+        <h1><span>Giovanna</span> <br>
+          <span>Aveiro</span> 
+          </h1>
+        <p>(she/her)</p>
+        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+      </div>
+    </header>
+
+  <!-- 'print' should be a button -->
+    <div class="actions">
+      <a class="icon" href="#" title="Print CV">CV
         <svg class="svg-icon" viewBox="0 0 24 24" role="img" aria-hidden="true" focusable="false">
           <use xlink:href="./assets/icons.svg#print"/>
         </svg>
       </a>
-      <svg class="svg-icon" viewBox="0 0 24 24" role="img" aria-hidden="true" focusable="false">
-        <use xlink:href="./assets/icons.svg#email"/>
-      </svg>
-      <address>
-        <p>to.gio@pm.me</p>
-        
-        <!-- Should the 'copy' be a button? -->
-        <a class="icon" href="#" title="Copy email address">
-          <svg class="svg-icon" viewBox="0 0 24 24" role="img" aria-hidden="true" focusable="false">
-            <use xlink:href="./assets/icons.svg#copy"/>
-          </svg>
-        </a>
-        <a href="mailto:to.gio@pm.me?subject=Important!&body=Hi Giovanna," target="_blank">
-          <svg class="svg-icon" viewBox="0 0 24 24" role="img" aria-hidden="true" focusable="false">
-            <use xlink:href="./assets/icons.svg#external"/>
-          </svg>
-        </a>
-      </address>
+    </div>
+    
      
-    </aside>
+  
+  <footer>
+    <p>© Giovanna</p>
+    <a class="icon" href="#" title="take me to Gio's website">
+      <svg class="svg-icon" viewBox="0 0 24 24" role="img" aria-hidden="true" focusable="false">
+        <use xlink:href="./assets/icons.svg#website">
+      </svg>www.glrta.me
+    </a>
+    <p>Last updated: DATE</p>
+    <a href="https://github.com/glrta/test-portfolio">View source</a>
+  </footer>
+  <script src="./script.js"></script>
 </body>
 </html>
