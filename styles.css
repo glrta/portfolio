@@ -13,18 +13,6 @@ html {
 }
 body {
   margin: 0;
-  overflow: hidden;
-}
-.navbar-icon {
-  font-family: 'Anton', sans-serif;
-  font-size: 1.5rem;
-  margin: 0;
-  position: fixed;
-  top: 2rem;
-  right: 2rem;
-  z-index: 999;
-  cursor: pointer;
-  visibility: hidden;
 }
 
 .socials a {
@@ -36,17 +24,7 @@ a {
   text-decoration: none;
   color: var(--font);
 }
-/* .landing {
-  height: 100vh;
-  display: flex;
-  justify-items: center;
 
-} */
-.header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 ul {
   list-style: none;
   padding: 0;
@@ -62,54 +40,66 @@ h2 {
   font-weight: 300;
 }
 .icon {
-  height: 1rem;
-  width: 1rem;
   display: inline-block;
-  fill: var(--font);
 }
 .svg-icon {
   /* Place the icon on the text baseline. */
   position: relative;
-  top: .125em;
   /* Prevent the icon from shrinking inside a flex container. */
   flex-shrink: 0;
-  /* Scale the icon to match the font-size of the parent element. */
   height: 1rem;
   width: 1rem;
   /* Let the icon take whatever color the parent has. */
-  /* fill: currentColor; */
-  /*
-  * If the icon is used on a link, which has a color transition,
-  * we can also use a transition on the fill value.
-  */
-  /* transition: fill .3s; */
+  fill: currentColor;
 }
  
-  .toggle-menu {
-    z-index: 998;
-    padding: 2rem;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    background-color: var(--accentColor);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: fixed;
-    }
+/* === Mobile navbar styles === */
+
+.navbar-icon {
+  font-family: 'Anton', sans-serif;
+  font-size: 1.5rem;
+  margin: 0;
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  z-index: 999;
+  cursor: pointer;
+  visibility: hidden;
+}
+.toggle-menu {
+  z-index: 998;
+  padding: 2rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: var(--accentColor);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  }
+.toggle-navbar {
+  text-align: right;
+  padding-top: 5rem;
+}
+.toggle-item {
+  margin-bottom: 1rem;
+  font-size: 5rem;
+}
+.toggle-socials {
+  align-self: flex-start;
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    position: relative;
+  }
+  .navbar-icon {
+    visibility: visible;
+  }
   .toggle {
     transform: translateX(-100%);
 
-  }
-  .toggle-navbar {
-    text-align: right;
-  }
-  .toggle-socials {
-    align-self: flex-start;
-  }
-@media screen and (max-width: 600px) {
-
-  .navbar-icon {
-    visibility: visible;
   }
 }
