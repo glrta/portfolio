@@ -14,8 +14,14 @@ html {
 body {
   margin: 0;
 }
-
-
+body::-webkit-scrollbar {
+  width: 8px;
+  background-color: var( --background);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var( --accentColor);
+  border-radius: 35px;
+}
 header {
   display: flex;
   height: 100vh;
@@ -204,5 +210,14 @@ footer * {
   }
   h2 {
     font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  h1 {
+    font-size: 9rem;
+  }
+  h2 {
+    font-size: 2rem;
   }
 }
