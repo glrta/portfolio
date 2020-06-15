@@ -12,3 +12,6 @@ menuIcon.addEventListener('click', (event) => {
 
 
 })
+
+// check if d-none class is present
+// if not, toggle the other classes

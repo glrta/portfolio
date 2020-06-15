@@ -59,6 +59,7 @@ address {
 ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 .title {
   flex: 1;
@@ -74,17 +75,42 @@ h1 {
   line-height: 85%;
   letter-spacing: 0.015em;
   text-align: center;
+  margin: 1rem;
 }
 h2 {
   font-weight: 300;
+  margin: .5rem;
 }
 
 .actions {
   align-self: flex-end;
-  padding-right: 2rem;
-  padding-bottom: 2rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.scroll-tip {
+  writing-mode: vertical-lr;
+  margin: 0;
+  margin-bottom: 2rem;
+  align-self: flex-end;
+  ;
+}
+.arrow-down {
+  align-self: flex-end;
+  border: solid currentColor;
+  border-width: 0 2px 2px 0;
+  padding: 3px;
+  transform: rotate(45deg);
+  margin: 0 6px 20px 0;
+}
+.arrow-line {
+  width: 70px;
+  border: solid 1px currentColor;
+  transform: rotate(90deg);
   position: absolute;
-  right: 0;
+  right: 6px;
+  top: 3px;
 }
 
 .icon {
@@ -108,7 +134,6 @@ footer {
 footer * {
   margin: 1rem;
 }
-/* === Mobile navbar styles === */
 
 .navbar-icon {
   font-family: 'Anton', sans-serif;
@@ -120,7 +145,28 @@ footer * {
   z-index: 999;
   cursor: pointer;
   visibility: hidden;
+  writing-mode: vertical-lr;
+
 }
+@media screen and (max-width: 800px) {
+  .header {
+    position: relative;
+  }
+  .navbar-icon {
+    visibility: visible;
+  }
+  .d-none {
+    display: none;
+  }
+  .actions {
+    position: absolute;
+    right: 0;
+  }
+
+
+  /* === Mobile navbar styles === */
+
+
 .toggle-menu {
   z-index: 998;
   bottom: 0;
@@ -150,14 +196,13 @@ footer * {
   align-self: flex-start;
 }
 
-@media screen and (max-width: 720px) {
-  .header {
-    position: relative;
+}
+
+@media screen and (max-width: 350px) {
+  h1 {
+    font-size: 3.5rem;
   }
-  .navbar-icon {
-    visibility: visible;
-  }
-  .d-none {
-    display: none;
+  h2 {
+    font-size: 1rem;
   }
 }
