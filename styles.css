@@ -14,19 +14,29 @@ html {
 body {
   margin: 0;
 }
-nav {
-  padding: 2rem;
-}
-nav ul li:nth-child(2) {
-  writing-mode: vertical-lr;
-  transform: rotate(180deg);
-  margin-top: 1rem;
-}
+
+
 header {
   display: flex;
+  height: 100vh;
 }
 
-aside {
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+nav {
+  padding: 2rem;
+  position: absolute;
+  top: 0;
+}
+nav ul li:nth-child(2) {
+  transform: rotate(180deg);
+  writing-mode: vertical-lr;
+  margin-top: 1rem;
+}
+.socials {
   padding: 2rem;
 }
 .socials a {
@@ -34,10 +44,8 @@ aside {
   font-size: 1.5rem;
   letter-spacing: 0.015em;
   border-bottom: solid 1px;  
-
-
 }
-aside p {
+.socials p {
   margin-top: .1rem;
   padding-top: .2rem;
 }
@@ -52,6 +60,14 @@ ul {
   list-style: none;
   padding: 0;
 }
+.title {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+}
 h1 {
   font-family: 'Anton', sans-serif;
   font-size: 5rem;
@@ -62,6 +78,15 @@ h1 {
 h2 {
   font-weight: 300;
 }
+
+.actions {
+  align-self: flex-end;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+  position: absolute;
+  right: 0;
+}
+
 .icon {
   display: inline-block;
 }
@@ -76,6 +101,13 @@ h2 {
   fill: currentColor;
 }
  
+footer {
+  display: flex;
+}
+
+footer * {
+  margin: 1rem;
+}
 /* === Mobile navbar styles === */
 
 .navbar-icon {
@@ -104,24 +136,28 @@ h2 {
 .toggle-navbar {
   text-align: right;
   padding-top: 5rem;
+  position: static;
 }
 .toggle-navbar ul li {
   margin-bottom: 1rem;
   font-size: 5rem;
 }
+.toggle-navbar ul li:nth-child(2) {
+  writing-mode: horizontal-tb;
+  transform: rotate(0deg);
+}
 .toggle-socials {
   align-self: flex-start;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 720px) {
   .header {
     position: relative;
   }
   .navbar-icon {
     visibility: visible;
   }
-  .toggle {
-    transform: translateX(-100%);
-
+  .d-none {
+    display: none;
   }
 }
