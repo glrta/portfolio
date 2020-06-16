@@ -13,6 +13,7 @@ html {
 }
 body {
   margin: 0;
+  scroll-behavior: smooth;
 }
 body::-webkit-scrollbar {
   width: 8px;
@@ -54,6 +55,7 @@ nav ul li:nth-child(2) {
 .socials p {
   margin-top: .1rem;
   padding-top: .2rem;
+  font-weight: 100;
 }
 a {
   text-decoration: none;
@@ -81,12 +83,13 @@ h1 {
   line-height: 85%;
   letter-spacing: 0.015em;
   text-align: center;
-  margin: 1rem 0;
+  margin: 0;
 }
-h2 {
+.tagline {
   font-weight: 300;
-  margin: .5rem;
-  background-color: var(--background);
+  font-size: 1.6rem;
+  margin: 0 1rem;
+  z-index: 1;
 }
 
 .actions {
@@ -101,7 +104,7 @@ h2 {
   margin: 0;
   margin-bottom: 2rem;
   align-self: flex-end;
-  ;
+  font-weight: 100;
 }
 .arrow-down {
   align-self: flex-end;
@@ -132,6 +135,26 @@ h2 {
   width: 1rem;
   /* Let the icon take whatever color the parent has. */
   fill: currentColor;
+}
+.section {
+  display: flex;
+  flex-direction: column;
+}
+.section-title {
+  font-weight: 300;
+  border-bottom: solid 1px;
+  align-self: flex-start;
+  padding-left: 2rem;
+}
+.project_title {
+  font-size: 3rem;
+  line-height: 85%;
+  letter-spacing: -0.015em;
+  text-align: center;
+  margin: 0;
+}
+.project_sum {
+  font-weight: 100;
 }
  
 footer {
@@ -198,7 +221,7 @@ footer * {
   }
 .toggle-navbar {
   text-align: right;
-  padding-top: 5rem;
+  padding-top: 6rem;
   position: static;
 }
 .toggle-navbar ul li {
