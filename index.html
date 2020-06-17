@@ -7,7 +7,7 @@
     <meta name="keywords" content="Full Stack Web developer, Front-end web developer, Sofware developer">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <meta name="theme-color" content="#a852ff">
+    <meta name="theme-color" content="hsl(180, 69%, 57%)">
     <!-- Tag below changes color of status bar on iPhone to match website color -->
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
@@ -21,8 +21,8 @@
     <div class="menu d-none">
       <nav class="navbar">
         <ul>
-          <li><a href="#work">work</a></li>
           <li><a href="#">about</a></li>
+          <li><a href="#work">work</a></li>
         </ul>
       </nav>
       <aside class="socials">
@@ -81,33 +81,21 @@
   <section class="section">
     <a id="work" class="section-title" href="#">work</a>
     <main class="work">
-      <article class="project">
-        <h3 class="project_title">Enterprise adventure</h3>
-        <img src="https://avatar.amuniversal.com/feature_avatars/recommendation_images/features/ch/large_rec-201701251556.jpg" alt="">
-        <p class="project_sum">Web app for non-profit Teach a Man to Fish, whose mission is to empower young people in Asia, Africa and Latin America with skills to succeed in school, work and life.</p>
-        <div class="project-links">
-          <a href="https://github.com/fac19/teach-fish-frontend">&lt;view FE&gt;</a>
-          <a class="project-links" href="https://enterprise-adventure.netlify.app/">&lt;live&gt;</a>
-      </div>
-        <div class="stack">
+      <article class="projects">
+        <div class="project-info">
+          <h3 class="project_title">Enterprise adventure</h3>
+          <p class="project_sum">Web app for non-profit Teach a Man to Fish, whose mission is to empower young people in Asia, Africa and Latin America with skills to succeed in school, work and life.</p>
+          <div class="project-links">
+            <a href="https://github.com/fac19/teach-fish-frontend">&lt;view FE&gt;</a>
+            <a class="project-links" href="https://enterprise-adventure.netlify.app/">&lt;live&gt;</a>
+          </div>
+          <div class="stack">
           <div class="stack-card">
             <svg class="svg-stack" viewBox="0 0 24 24" role="img" aria-hidden="true" focusable="false">
               <use xlink:href="./assets/stack.svg#react"/>
             </svg>
             <p class="stack-key">react</p>
           </div>
-          <div class="stack-card">
-            <svg class="svg-stack" viewBox="0 0 24 11" role="img" aria-hidden="true" focusable="false">
-              <use xlink:href="./assets/stack.svg#styled-components"/>
-            </svg>
-            <p class="stack-key">styled comp.</p>
-          </div>
-          <div class="stack-card">
-            <svg class="svg-stack" viewBox="0 0 26 26" role="img" aria-hidden="true" focusable="false">
-              <use xlink:href="./assets/stack.svg#material-ui"/>
-            </svg>
-            <p class="stack-key">material ui</p>
-        </div>
           <div class="stack-card">
             <svg class="svg-stack" viewBox="0 0 24 24" role="img" aria-hidden="true" focusable="false">
               <use xlink:href="./assets/stack.svg#jest"/>
@@ -125,6 +113,12 @@
             <use xlink:href="./assets/stack.svg#airtable"/>
           </svg>
           <p class="stack-key">airtable</p>
+        </div>
+        <div class="stack-card">
+          <svg class="svg-stack" viewBox="0 0 26 26" role="img" aria-hidden="true" focusable="false">
+            <use xlink:href="./assets/stack.svg#netlify"/>
+        </svg>
+        <p class="stack-key">netlify dev</p>
       </div>
         <div class="stack-card">
           <svg class="svg-stack" viewBox="0 0 26 26" role="img" aria-hidden="true" focusable="false">
@@ -132,18 +126,32 @@
           </svg>
           <p class="stack-key">figma</p>
       </div>
+      <div class="stack-card">
+        <svg class="svg-stack" viewBox="0 0 24 11" role="img" aria-hidden="true" focusable="false">
+          <use xlink:href="./assets/stack.svg#styled-components"/>
+        </svg>
+        <p class="stack-key">styled comp.</p>
       </div>
-      </article>
-      <article class="project">
-        <h3 class="project_title">Bechdel and beyond</h3>
-        <img src="https://avatar.amuniversal.com/feature_avatars/recommendation_images/features/ch/large_rec-201701251556.jpg" alt="">
-        <p class="project_sum">Community-driven app that allows users to rate and find films based on gender representation on and behind the scenes. </p>
-        <div class="project-links">
-          <a href="https://github.com/fac19/Bechdel-Beyond-backend">&lt;view BE&gt;</a>
-          <a href="https://github.com/fac19/Bechdel-Beyond">&lt;view FE&gt;</a>
-        <a href="https://bechdelbeyond.netlify.app/">&lt;live&gt;</a>
+      <div class="stack-card">
+        <svg class="svg-stack" viewBox="0 0 24 24" role="img" aria-hidden="true" focusable="false">
+          <use xlink:href="./assets/stack.svg#material-ui"/>
+        </svg>
+        <p class="stack-key">material ui.</p>
+      </div>
+          </div>
         </div>
-        <div class="stack">
+        <img src="https://avatar.amuniversal.com/feature_avatars/recommendation_images/features/ch/large_rec-201701251556.jpg" alt="">
+      </article>
+      <article class="projects second">
+        <div class="project-info">
+          <h3 class="project_title">Bechdel and beyond</h3>
+          <p class="project_sum">Community-driven app that allows users to rate and find films based on gender representation on and behind the scenes. </p>
+          <div class="project-links">
+            <a href="https://github.com/fac19/Bechdel-Beyond-backend">&lt;view BE&gt;</a>
+            <a href="https://github.com/fac19/Bechdel-Beyond">&lt;view FE&gt;</a>
+            <a href="https://bechdelbeyond.netlify.app/">&lt;live&gt;</a>
+          </div>
+          <div class="stack">
           <div class="stack-card">
             <svg class="svg-stack" viewBox="0 0 24 24" role="img" aria-hidden="true" focusable="false">
               <use xlink:href="./assets/stack.svg#react"/>
@@ -192,8 +200,9 @@
             </svg>
             <p class="stack-key">codecov</p>
         </div>
+          </div>
         </div>
-        
+        <img src="https://avatar.amuniversal.com/feature_avatars/recommendation_images/features/ch/large_rec-201701251556.jpg" alt="">
       </article>
     </main>
   </section>
