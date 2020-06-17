@@ -138,7 +138,7 @@ h1 {
 }
 .section {
   display: flex;
-  flex-direction: column;
+  width: 100%;
 }
 .section-title {
   font-weight: 300;
@@ -146,17 +146,91 @@ h1 {
   align-self: flex-start;
   padding-left: 2rem;
 }
+
+/* === work section === */
+
+.work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.project {
+  align-self: center;
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: 2rem repeat(5, 1fr) 2rem;
+  grid-template-rows: repeat(5, auto);
+  grid-gap: 1rem;
+  grid-template-areas: 
+  ". left left middle right right ."
+  ". left left middle right right ."
+  ". left left middle right right ."
+  ". left left middle right right ."
+  ". left left middle right right .";
+}
+
 .project_title {
+  grid-area: left;
+  grid-row: 1;
   font-size: 3rem;
   line-height: 85%;
   letter-spacing: -0.015em;
-  text-align: center;
+  text-align: left;
   margin: 0;
 }
 .project_sum {
   font-weight: 100;
+  grid-area: left;
+  grid-row: 2;
+  margin-bottom: 0;
 }
- 
+.project-links {
+  grid-area: left;
+  grid-row: 3;
+  margin-bottom: .8rem;
+
+}
+.project-links a {
+  border-bottom: 1px solid currentColor;
+  margin-right: 1rem;
+}
+img {
+  width: 400px;
+  grid-area: middle / span 6;
+  -webkit-box-shadow: 67px 60px 0px 5px var(--accentColor);
+-moz-box-shadow: 67px 60px 0px 5px var(--accentColor);
+box-shadow: 67px 60px 0px 5px var(--accentColor);
+margin-bottom: 1rem;
+
+}
+.stack {
+  display: flex;
+  flex-wrap: wrap;
+  grid-area: left;
+  grid-row: 4;
+
+}
+.stack-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: .5rem;
+  max-width: 5rem;
+}
+.stack-key {
+  font-weight: 100;
+  font-size: .8rem;
+  text-align: center;
+}
+.svg-stack {
+  position: relative;
+  /* Prevent the icon from shrinking inside a flex container. */
+  flex-shrink: 0;
+  height: 2rem;
+  width: 2rem;
+  /* Let the icon take whatever color the parent has. */
+  fill: currentColor;
+}
 footer {
   display: flex;
 }
