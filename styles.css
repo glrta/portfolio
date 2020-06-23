@@ -13,6 +13,7 @@ html {
 }
 body {
   margin: 0;
+  scroll-behavior: smooth;
 }
 body::-webkit-scrollbar {
   width: 8px;
@@ -54,6 +55,7 @@ nav ul li:nth-child(2) {
 .socials p {
   margin-top: .1rem;
   padding-top: .2rem;
+  font-weight: 100;
 }
 a {
   text-decoration: none;
@@ -81,12 +83,13 @@ h1 {
   line-height: 85%;
   letter-spacing: 0.015em;
   text-align: center;
-  margin: 1rem 0;
+  margin: 0;
 }
-h2 {
+.tagline {
   font-weight: 300;
-  margin: .5rem;
-  background-color: var(--background);
+  font-size: 1.6rem;
+  margin: 0 1rem;
+  z-index: 1;
 }
 
 .actions {
@@ -101,7 +104,7 @@ h2 {
   margin: 0;
   margin-bottom: 2rem;
   align-self: flex-end;
-  ;
+  font-weight: 100;
 }
 .arrow-down {
   align-self: flex-end;
@@ -133,7 +136,95 @@ h2 {
   /* Let the icon take whatever color the parent has. */
   fill: currentColor;
 }
- 
+.section-title {
+  font-weight: 300;
+  border-bottom: solid 1px;
+  align-self: flex-start;
+  padding-left: 2rem;
+  padding-top: 2rem;
+}
+
+/* === work section === */
+
+.projects {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 2rem;
+}
+.second {
+  flex-direction: row-reverse;
+}
+.second .project-info {
+  padding-left: 2rem;
+  text-align: right;
+
+}
+.second .project_title {
+  text-align: right;
+}
+.second .project-info .stack {
+  justify-content: flex-end;
+}
+.second .project-info .stack .stack-card {
+  margin-right: 0;
+  margin-left: .5rem;
+}
+.project-info {
+  padding-right: 2rem;
+  max-width: 444px;
+}
+.project_title {
+  font-size: 3rem;
+  line-height: 85%;
+  letter-spacing: -0.015em;
+  text-align: left;
+  margin: 0;
+}
+.project_sum {
+  font-weight: 100;
+  margin: 3rem 0;
+}
+.project-links {
+  display: flex;
+  justify-content: space-around;
+}
+.project-links a {
+  border-bottom: 1px solid currentColor;
+  margin-right: .5rem;
+}
+img {
+  width: 200px;
+  height: 120px;
+  /* -webkit-box-shadow: 67px 60px 0px 5px var(--accentColor);
+-moz-box-shadow: 67px 60px 0px 5px var(--accentColor);
+box-shadow: 67px 60px 0px 5px var(--accentColor); */
+}
+.stack {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 3rem 0;
+}
+.stack-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: .5rem;
+  max-width: 5rem;
+}
+.stack-key {
+  font-weight: 100;
+  font-size: .8rem;
+  text-align: center;
+}
+.svg-stack {
+  position: relative;
+  /* Prevent the icon from shrinking inside a flex container. */
+  flex-shrink: 0;
+  height: 2rem;
+  width: 2rem;
+  /* Let the icon take whatever color the parent has. */
+  fill: currentColor;
+}
 footer {
   display: flex;
 }
@@ -180,8 +271,13 @@ footer * {
     position: absolute;
     right: 0;
   }
+  .projects {
+    flex-direction: column;
+  }
+  .second .project-info {
+    padding-left: 0;
 
-
+  }
   /* === Mobile navbar toggle styles === */
 
 .toggle-menu {
@@ -198,7 +294,7 @@ footer * {
   }
 .toggle-navbar {
   text-align: right;
-  padding-top: 5rem;
+  padding-top: 6rem;
   position: static;
 }
 .toggle-navbar ul li {
