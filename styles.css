@@ -144,43 +144,44 @@ h1 {
   padding-top: 2rem;
 }
 
+.section {
+  min-height: 100vh;
+}
+
+/* === about section === */
+
+
 /* === work section === */
 
 .projects {
   display: flex;
   justify-content: center;
-  padding: 3rem 2rem;
+  padding: 7rem 2rem;
 }
-.second {
+.projects_odd {
   flex-direction: row-reverse;
 }
-.second .project-info {
+.project-card {
+  padding-right: 2rem;
+  max-width: 470px;
+}
+.project-card_odd {
+  padding-right: 0;
   padding-left: 2rem;
   text-align: right;
-
 }
-.second .project_title {
-  text-align: right;
-}
-.second .project-info .stack {
-  justify-content: flex-end;
-}
-.second .project-info .stack .stack-card {
-  margin-right: 0;
-  margin-left: .5rem;
-}
-.project-info {
-  padding-right: 2rem;
-  max-width: 444px;
-}
-.project_title {
+.project-title {
   font-size: 3rem;
+  font-family: 'Anton', sans-serif;  
   line-height: 85%;
   letter-spacing: -0.015em;
   text-align: left;
   margin: 0;
 }
-.project_sum {
+.project-title_odd {
+  text-align: right;
+}
+.project-sum {
   font-weight: 100;
   margin: 3rem 0;
 }
@@ -192,25 +193,32 @@ h1 {
   border-bottom: 1px solid currentColor;
   margin-right: .5rem;
 }
-img {
-  width: 200px;
-  height: 120px;
+img,
+video {
+  max-width: 600px;
   /* -webkit-box-shadow: 67px 60px 0px 5px var(--accentColor);
 -moz-box-shadow: 67px 60px 0px 5px var(--accentColor);
-box-shadow: 67px 60px 0px 5px var(--accentColor); */
+box-shadow: .5rem .5rem 0px 0px var(--accentColor); */
+border: .5rem solid currentColor;
+border-radius: 3px;  
 }
+
+
 .stack {
   display: flex;
   flex-wrap: wrap;
   margin: 3rem 0;
 }
+.stack_odd {
+  justify-content: flex-end;
+}
 .stack-card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-right: .5rem;
-  max-width: 5rem;
+  min-width: 3.5rem;
 }
+
 .stack-key {
   font-weight: 100;
   font-size: .8rem;
@@ -274,10 +282,7 @@ footer * {
   .projects {
     flex-direction: column;
   }
-  .second .project-info {
-    padding-left: 0;
 
-  }
   /* === Mobile navbar toggle styles === */
 
 .toggle-menu {

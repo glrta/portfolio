@@ -79,15 +79,20 @@
     </div>
   </header>
   <section class="section">
+    <a id="about" class="section-title" href="#">about</a>
+    <main class="about">
+      
+    </main>
+  </section>
+  <section class="section">
     <a id="work" class="section-title" href="#">work</a>
     <main class="work">
       <article class="projects">
-        <div class="project-info">
-          <h3 class="project_title">Enterprise adventure</h3>
-          <p class="project_sum">Web app for non-profit Teach a Man to Fish, whose mission is to empower young people in Asia, Africa and Latin America with skills to succeed in school, work and life.</p>
+        <div class="project-card">
+          <a class="project-title" href="https://enterprise-adventure.netlify.app/">Enterprise adventure</a>
+          <p class="project-sum">Web app for non-profit Teach a Man to Fish, whose mission is to empower young people in Asia, Africa and Latin America with skills to succeed in school, work and life.</p>
           <div class="project-links">
-            <a href="https://github.com/fac19/teach-fish-frontend">&lt;view FE&gt;</a>
-            <a class="project-links" href="https://enterprise-adventure.netlify.app/">&lt;live&gt;</a>
+            <a href="https://github.com/fac19/teach-fish-frontend">&lt;view code&gt;</a>
           </div>
           <div class="stack">
           <div class="stack-card">
@@ -96,6 +101,12 @@
             </svg>
             <p class="stack-key">react</p>
           </div>
+                <div class="stack-card">
+        <svg class="svg-stack" viewBox="0 0 24 11" role="img" aria-hidden="true" focusable="false">
+          <use xlink:href="./assets/stack.svg#styled-components"/>
+        </svg>
+        <p class="stack-key">styled comp.</p>
+      </div>
           <div class="stack-card">
             <svg class="svg-stack" viewBox="0 0 24 24" role="img" aria-hidden="true" focusable="false">
               <use xlink:href="./assets/stack.svg#jest"/>
@@ -109,49 +120,40 @@
             <p class="stack-key">codecov</p>
         </div>
         <div class="stack-card">
-          <svg class="svg-stack" viewBox="0 0 26 26" role="img" aria-hidden="true" focusable="false">
-            <use xlink:href="./assets/stack.svg#airtable"/>
+          <svg class="svg-stack" viewBox="0 0 24 24" role="img" aria-hidden="true" focusable="false">
+            <use xlink:href="./assets/stack.svg#material-ui"/>
           </svg>
-          <p class="stack-key">airtable</p>
+          <p class="stack-key">material ui.</p>
         </div>
-        <div class="stack-card">
-          <svg class="svg-stack" viewBox="0 0 26 26" role="img" aria-hidden="true" focusable="false">
-            <use xlink:href="./assets/stack.svg#netlify"/>
-        </svg>
-        <p class="stack-key">netlify dev</p>
-      </div>
         <div class="stack-card">
           <svg class="svg-stack" viewBox="0 0 26 26" role="img" aria-hidden="true" focusable="false">
             <use xlink:href="./assets/stack.svg#figma"/>
           </svg>
           <p class="stack-key">figma</p>
       </div>
-      <div class="stack-card">
-        <svg class="svg-stack" viewBox="0 0 24 11" role="img" aria-hidden="true" focusable="false">
-          <use xlink:href="./assets/stack.svg#styled-components"/>
+        <div class="stack-card">
+          <svg class="svg-stack" viewBox="0 0 26 26" role="img" aria-hidden="true" focusable="false">
+            <use xlink:href="./assets/stack.svg#netlify"/>
         </svg>
-        <p class="stack-key">styled comp.</p>
-      </div>
-      <div class="stack-card">
-        <svg class="svg-stack" viewBox="0 0 24 24" role="img" aria-hidden="true" focusable="false">
-          <use xlink:href="./assets/stack.svg#material-ui"/>
-        </svg>
-        <p class="stack-key">material ui.</p>
+        <p class="stack-key">netlify dev</p>
       </div>
           </div>
         </div>
-        <img src="https://avatar.amuniversal.com/feature_avatars/recommendation_images/features/ch/large_rec-201701251556.jpg" alt="">
+        <video autoplay loop poster="./assets/projects/adventure.png">
+          <source  src="./assets/projects/adventure.mp4"
+                  type="video/mp4">
+          Sorry, your browser doesn't support embedded videos.
+      </video>
       </article>
-      <article class="projects second">
-        <div class="project-info">
-          <h3 class="project_title">Bechdel and beyond</h3>
-          <p class="project_sum">Community-driven app that allows users to rate and find films based on gender representation on and behind the scenes. </p>
+      <article class="projects projects_odd">
+        <div class="project-card project-card_odd">
+          <a class="project-title project-title_odd" href="https://bechdelbeyond.netlify.app/">Bechdel and beyond</a>
+          <p class="project-sum">Community-driven app that allows users to rate and find films based on gender representation on and behind the scenes. </p>
           <div class="project-links">
-            <a href="https://github.com/fac19/Bechdel-Beyond-backend">&lt;view BE&gt;</a>
-            <a href="https://github.com/fac19/Bechdel-Beyond">&lt;view FE&gt;</a>
-            <a href="https://bechdelbeyond.netlify.app/">&lt;live&gt;</a>
+            <a href="https://github.com/fac19/Bechdel-Beyond-backend">&lt;view BE code&gt;</a>
+            <a href="https://github.com/fac19/Bechdel-Beyond">&lt;view FE code&gt;</a>
           </div>
-          <div class="stack">
+          <div class="stack stack_odd">
           <div class="stack-card">
             <svg class="svg-stack" viewBox="0 0 24 24" role="img" aria-hidden="true" focusable="false">
               <use xlink:href="./assets/stack.svg#react"/>
@@ -202,13 +204,41 @@
         </div>
           </div>
         </div>
-        <img src="https://avatar.amuniversal.com/feature_avatars/recommendation_images/features/ch/large_rec-201701251556.jpg" alt="">
+        <video autoplay loop poster="./assets/projects/bechdel.png">
+          <source  src="./assets/projects/bechdel.mp4"
+                  type="video/mp4">
+          Sorry, your browser doesn't support embedded videos.
+      </video>
       </article>
-    </main>
-  </section>
-  <section class="section">
-    <a id="about" class="section-title" href="#">about</a>
-    <main>
+      <article class="projects">
+        <div class="project-card">
+          <a class="project-title" href="juliamachadoart.netlify.app">Julia Machado Portfolio</a>
+          <p class="project-sum">Static website designed by the artist to showcase zines created during her art degree</p>
+          <div class="project-links">
+            <a href="https://github.com/glrta/julia-machado-portfolio">&lt;view FE code&gt;</a>
+          </div>
+          <div class="stack">
+            <div class="stack-card">
+              <svg class="svg-stack" viewBox="0 0 24 24" role="img" aria-hidden="true" focusable="false">
+                <use xlink:href="./assets/stack.svg#html"/>
+              </svg>
+              <p class="stack-key">HTML5</p>
+            </div>
+          <div class="stack-card">
+            <svg class="svg-stack" viewBox="0 0 24 24" role="img" aria-hidden="true" focusable="false">
+              <use xlink:href="./assets/stack.svg#css"/>
+            </svg>
+            <p class="stack-key">CSS3</p>
+          </div>
+          </div>
+          </div>
+          <video autoplay loop poster="./assets/projects/julia.png">
+            <source  src="./assets/projects/julia.mp4"
+                    type="video/mp4">
+            Sorry, your browser doesn't support embedded videos.
+        </video>
+      </article>
+
       
     </main>
   </section>
