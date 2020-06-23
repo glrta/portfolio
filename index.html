@@ -17,7 +17,9 @@
 </head>
 <body class="body">
   <header>
-    <p class="navbar-icon">glrta</p>
+      <svg class="navbar-icon svg-icon" viewBox="0 0 13 13" role="img" aria-hidden="true" focusable="false">
+        <use xlink:href="./assets/icons.svg#triangle"/>
+      </svg>
     <div class="menu d-none">
       <nav class="navbar">
         <ul>
@@ -26,24 +28,32 @@
         </ul>
       </nav>
       <aside class="socials">
-        <div>
-          <a class="icon social" href="https://www.linkedin.com/in/glrta/" target="_blank" title="take me to Gio's LinkedIn page">Linkedin
-            <svg class="svg-icon icon" viewBox="0 0 24 24" role="img" aria-hidden="true" focusable="false">
+        <div class="social">
+          <a href="https://www.linkedin.com/in/glrta/" target="_blank" title="take me to Gio's LinkedIn page">Linkedin
+            <svg class="svg-icon" viewBox="0 0 24 24" role="img" aria-hidden="true" focusable="false">
               <use xlink:href="./assets/icons.svg#linkedin"/>
             </svg>
           </a>
           <p>full résumé</p>
         </div>
-        <div>
-          <a class="icon social" href="https://github.com/glrta" target="_blank" title="take me to Gio's GitHub page">GitHub
+        <div class="social">
+          <a href="https://github.com/glrta" target="_blank" title="take me to Gio's GitHub page">GitHub
             <svg class="svg-icon" viewBox="0 0 24 24" role="img" aria-hidden="true" focusable="false">
               <use xlink:href="./assets/icons.svg#github"/>
             </svg>
           </a>
           <p>all my projects</p>
         </div>
-        <div>
-          <a class="icon social" href="h#" target="_blank" title="take me to Gio's Medium page">Medium
+        <div class="social">
+          <a href="h#" target="_blank" title="take me to Gio's Twitter page">Twitter
+            <svg class="svg-icon" viewBox="0 0 24 24" role="img" aria-hidden="true" focusable="false">
+              <use xlink:href="./assets/icons.svg#twitter"/>
+            </svg>
+          </a>
+          <p>light thoughts</p>
+        </div>
+        <div class="social">
+          <a href="h#" target="_blank" title="take me to Gio's Medium page">Medium
             <svg class="svg-icon" viewBox="0 0 24 24" role="img" aria-hidden="true" focusable="false">
               <use xlink:href="./assets/icons.svg#medium"/>
             </svg>
@@ -139,7 +149,7 @@
       </div>
           </div>
         </div>
-        <video autoplay loop poster="./assets/projects/adventure.png">
+        <video class="video-mobile" autoplay loop poster="./assets/projects/adventure.png">
           <source  src="./assets/projects/adventure.mp4"
                   type="video/mp4">
           Sorry, your browser doesn't support embedded videos.
@@ -204,7 +214,7 @@
         </div>
           </div>
         </div>
-        <video autoplay loop poster="./assets/projects/bechdel.png">
+        <video class="video-desktop" autoplay loop poster="./assets/projects/bechdel.png">
           <source  src="./assets/projects/bechdel.mp4"
                   type="video/mp4">
           Sorry, your browser doesn't support embedded videos.
@@ -232,7 +242,7 @@
           </div>
           </div>
           </div>
-          <video autoplay loop poster="./assets/projects/julia.png">
+          <video class="video-desktop" autoplay loop poster="./assets/projects/julia.png">
             <source  src="./assets/projects/julia.mp4"
                     type="video/mp4">
             Sorry, your browser doesn't support embedded videos.
