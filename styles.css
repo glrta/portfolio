@@ -198,19 +198,16 @@ h1 {
 
 .video-desktop {
   max-width: 600px;
-
-  /* border: .5rem solid currentColor; */
-  /* border-radius: 15px;  */
 }
 .video-mobile {
-  max-height: 400px; 
-  /* border: .2rem solid currentColor; */
-  /* border-radius: 15px;  */
-}
-/* video {
-  justify-self: center;
+  max-height: 400px;
   background-color: var(--font);
-} */
+  border: 2px solid currentColor;
+  border-radius: 30px;
+  align-self: center;
+ 
+
+}
 
 .stack {
   display: flex;
