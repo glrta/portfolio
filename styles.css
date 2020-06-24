@@ -169,6 +169,7 @@ h1 {
   text-align: right;
 }
 .project-title {
+  padding: .5rem;
   font-size: 3rem;
   font-family: 'Anton', sans-serif;  
   line-height: 85%;
@@ -178,6 +179,9 @@ h1 {
 }
 .project-title_odd {
   text-align: right;
+}
+.project-title:hover {
+  background: linear-gradient(0deg, rgba(0,0,0,0) 19%, rgba(70,221,221,1) 19%, rgba(70,221,221,1) 41%, rgba(0,0,0,0) 41%);
 }
 .project-sum {
   font-weight: 100;
@@ -194,16 +198,15 @@ h1 {
 
 .video-desktop {
   max-width: 600px;
-  border: .5rem solid currentColor;
-  border-radius: 3px; 
 }
 .video-mobile {
-  max-height: 400px; 
-  border: .2rem solid currentColor;
-  border-radius: 15px; 
-}
-video {
+  max-height: 400px;
+  background-color: var(--font);
+  border: 2px solid currentColor;
+  border-radius: 30px;
   align-self: center;
+ 
+
 }
 
 .stack {
@@ -268,6 +271,16 @@ footer * {
   }
 }
 
+@media screen and (max-width: 960px) {
+  .projects {
+    flex-direction: column;
+    padding: 4rem 2rem;
+
+  }
+  /* .projects_odd {
+    flex-direction: column;
+  } */
+}
 @media screen and (max-width: 800px) {
   .header {
     position: relative;
@@ -281,9 +294,6 @@ footer * {
   .actions {
     position: absolute;
     right: 0;
-  }
-  .projects {
-    flex-direction: column;
   }
 
   /* === Mobile navbar toggle styles === */
