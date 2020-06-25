@@ -43,9 +43,32 @@ nav ul li:nth-child(2) {
   writing-mode: vertical-lr;
   margin-top: 1rem;
 }
+.navbar-a:hover,
+.download:hover,
+.project-links a:hover,
+.footer-link:hover {
+  font-weight: 200;
+}
 .socials {
   padding: 2rem;
 }
+.social {
+  position: relative;
+}
+.social a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.social:hover,
+.social a:hover,
+address a:hover {
+  color: var(--accentColor); 
+}
+
 .socials a {
   font-family: 'Anton', sans-serif;
   font-size: 1.5rem;
@@ -145,6 +168,9 @@ h1 {
 .section {
   min-height: 100vh;
 }
+.section-title:hover {
+  font-weight: 600;
+}
 
 /* === about section === */
 
@@ -169,7 +195,6 @@ h1 {
   text-align: right;
 }
 .project-title {
-  padding: .5rem;
   font-size: 3rem;
   font-family: 'Anton', sans-serif;  
   line-height: 85%;
@@ -181,7 +206,9 @@ h1 {
   text-align: right;
 }
 .project-title:hover {
-  background: linear-gradient(0deg, rgba(0,0,0,0) 19%, rgba(70,221,221,1) 19%, rgba(70,221,221,1) 41%, rgba(0,0,0,0) 41%);
+  /* color: var(--accentColor); */
+  border-bottom: 1px solid currentColor;
+
 }
 .project-sum {
   font-weight: 100;
@@ -193,22 +220,19 @@ h1 {
 }
 .project-links a {
   border-bottom: 1px solid currentColor;
-  margin-right: .5rem;
+  /* margin-right: .5rem; */
 }
-
 .video-desktop {
   max-width: 600px;
 }
 .video-mobile {
   max-height: 400px;
+  min-width: 200px;
   background-color: var(--font);
   border: 2px solid currentColor;
   border-radius: 30px;
   align-self: center;
- 
-
 }
-
 .stack {
   display: flex;
   flex-wrap: wrap;
@@ -245,7 +269,9 @@ footer {
 footer * {
   margin: 1rem;
 }
-
+.footer-link {
+  border-bottom: 1px solid currentColor;
+}
 .navbar-icon {
   margin: 0;
   position: fixed;
@@ -277,9 +303,10 @@ footer * {
     padding: 4rem 2rem;
 
   }
-  /* .projects_odd {
-    flex-direction: column;
-  } */
+  .projects_odd {
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+  }
 }
 @media screen and (max-width: 800px) {
   .header {
@@ -295,7 +322,11 @@ footer * {
     position: absolute;
     right: 0;
   }
-
+  .social:hover,
+  .social a:hover,
+  address a:hover {
+    color: var(--background); 
+  }
   /* === Mobile navbar toggle styles === */
   .social {
     flex: 50%;
