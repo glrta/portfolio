@@ -63,6 +63,12 @@ nav ul li:nth-child(2) {
     bottom: 0;
     left: 0;
 }
+.social:hover,
+.social a:hover,
+address a:hover {
+  color: var(--accentColor); 
+}
+
 .socials a {
   font-family: 'Anton', sans-serif;
   font-size: 1.5rem;
@@ -189,7 +195,6 @@ h1 {
   text-align: right;
 }
 .project-title {
-  padding: .5rem;
   font-size: 3rem;
   font-family: 'Anton', sans-serif;  
   line-height: 85%;
@@ -200,10 +205,10 @@ h1 {
 .project-title_odd {
   text-align: right;
 }
-.project-title:hover,
-.social a:hover,
-address:hover {
-  background: linear-gradient(0deg, rgba(0,0,0,0) 19%, rgba(70,221,221,1) 19%, rgba(70,221,221,1) 41%, rgba(0,0,0,0) 41%);
+.project-title:hover {
+  /* color: var(--accentColor); */
+  border-bottom: 1px solid currentColor;
+
 }
 .project-sum {
   font-weight: 100;
@@ -222,6 +227,7 @@ address:hover {
 }
 .video-mobile {
   max-height: 400px;
+  min-width: 200px;
   background-color: var(--font);
   border: 2px solid currentColor;
   border-radius: 30px;
@@ -297,9 +303,10 @@ footer * {
     padding: 4rem 2rem;
 
   }
-  /* .projects_odd {
-    flex-direction: column;
-  } */
+  .projects_odd {
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+  }
 }
 @media screen and (max-width: 800px) {
   .header {
@@ -315,7 +322,11 @@ footer * {
     position: absolute;
     right: 0;
   }
-
+  .social:hover,
+  .social a:hover,
+  address a:hover {
+    color: var(--background); 
+  }
   /* === Mobile navbar toggle styles === */
   .social {
     flex: 50%;
