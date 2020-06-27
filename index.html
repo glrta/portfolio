@@ -10,26 +10,26 @@
     <meta name="theme-color" content="hsl(180, 69%, 57%)">
     <!-- Tag below changes color of status bar on iPhone to match website color -->
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+    <link rel="icon" href="./assets/favicon.svg">
     <link rel="alternate icon" href="/assets/favicon.ico">
     <link rel="stylesheet" href="styles.css">
     <title>Giovanna Aveiro</title>
 </head>
 <body class="body">
   <header>
-      <svg class="navbar-icon svg-icon" viewBox="0 0 13 13" role="img" aria-hidden="true" focusable="false">
-        <use xlink:href="./assets/icons.svg#triangle"/>
+      <svg class="navbar-icon svg-icon" viewBox="0 0 24 24" role="img" aria-hidden="true" focusable="false">
+        <use xlink:href="./assets/icons.svg#menu-icon"/>
       </svg>
     <div class="menu d-none">
       <nav class="navbar">
         <ul>
-          <li><a class="navbar-a" href="#">about</a></li>
-          <li><a class="navbar-a" href="#work">work</a></li>
+          <li><a id="menu-about" class="navbar-a" href="#about">about</a></li>
+          <li><a id="menu-work" class="navbar-a" href="#work">work</a></li>
         </ul>
       </nav>
       <aside class="socials">
         <div class="social">
-          <a href="https://www.linkedin.com/in/glrta/" target="_blank" title="take me to Gio's LinkedIn page">Linkedin
+          <a href="https://www.linkedin.com/in/glrta/" target="_blank" rel="noopener" title="take me to Gio's LinkedIn page">Linkedin
             <svg class="svg-icon" viewBox="0 0 24 24" role="img" aria-hidden="true" focusable="false">
               <use xlink:href="./assets/icons.svg#linkedin"/>
             </svg>
@@ -37,7 +37,7 @@
           <p>full résumé</p>
         </div>
         <div class="social">
-          <a href="https://github.com/glrta" target="_blank" title="take me to Gio's GitHub page">GitHub
+          <a href="https://github.com/glrta" target="_blank" rel="noopener" title="take me to Gio's GitHub page">GitHub
             <svg class="svg-icon" viewBox="0 0 24 24" role="img" aria-hidden="true" focusable="false">
               <use xlink:href="./assets/icons.svg#github"/>
             </svg>
@@ -45,7 +45,7 @@
           <p>all my projects</p>
         </div>
         <div class="social">
-          <a href="h#" target="_blank" title="take me to Gio's Twitter page">Twitter
+          <a href="#" target="_blank" rel="noopener" title="take me to Gio's Twitter page">Twitter
             <svg class="svg-icon" viewBox="0 0 24 24" role="img" aria-hidden="true" focusable="false">
               <use xlink:href="./assets/icons.svg#twitter"/>
             </svg>
@@ -53,15 +53,15 @@
           <p>light thoughts</p>
         </div>
         <div class="social">
-          <a href="h#" target="_blank" title="take me to Gio's Medium page">Medium
+          <a href="https://dev.to/glrta" target="_blank" rel="noopener" title="take me to Gio's DEV profile">dev.to
             <svg class="svg-icon" viewBox="0 0 24 24" role="img" aria-hidden="true" focusable="false">
-              <use xlink:href="./assets/icons.svg#medium"/>
+              <use xlink:href="./assets/icons.svg#dev"/>
             </svg>
           </a>
           <p>deep thoughts</p>
         </div>
         <address>
-          <a href="mailto:glrta@pm.me?subject=Important!&body=Hi Giovanna," target="_blank">glrta@pm.me
+          <a href="mailto:glrta@pm.me?subject=Important!&body=Hi Giovanna," target="_blank" rel="noopener">glrta@pm.me
             <svg class="svg-icon" viewBox="0 0 24 24" role="img" aria-hidden="true" focusable="false">
               <use xlink:href="./assets/icons.svg#external"/>
             </svg>
@@ -100,7 +100,7 @@
 
       <article class="projects">
         <div class="project-card">
-          <a class="project-title" target="_blank" href="https://bechdelbeyond.netlify.app/"  title="Go to Bechdel and beyond's live website">Bechdel and beyond</a>
+          <a class="project-title" target="_blank" rel="noopener" href="https://bechdelbeyond.netlify.app/"  title="Go to Bechdel and beyond's live website">Bechdel and beyond</a>
           <p class="project-sum">Community-driven app that allows users to rate and find films based on gender representation on and behind the scenes. </p>
           <div class="project-links">
             <a href="https://github.com/fac19/Bechdel-Beyond-backend">&lt;view BE code&gt;</a>
@@ -157,7 +157,7 @@
         </div>
           </div>
         </div>
-        <video class="video-desktop" autoplay loop poster="./assets/projects/bechdel.png">
+        <video class="video-desktop" autoplay loop poster="./assets/projects/bechdel.webp">
           <source  src="./assets/projects/bechdel.mp4"
                   type="video/mp4">
           Sorry, your browser doesn't support embedded videos.
@@ -166,7 +166,7 @@
 
       <article class="projects projects_odd">
         <div class="project-card  project-card_odd">
-          <a class="project-title  project-title_odd" target="_blank" href="https://enterprise-adventure.netlify.app/" title="Go to Enterprise Adventure's live website">Enterprise adventure</a>
+          <a class="project-title  project-title_odd" target="_blank" rel="noopener" href="https://enterprise-adventure.netlify.app/" title="Go to Enterprise Adventure's live website">Enterprise adventure</a>
           <p class="project-sum">Web app for non-profit Teach a Man to Fish, whose mission is to empower young people in Asia, Africa and Latin America with skills to succeed in school, work and life.</p>
           <div class="project-links">
             <a href="https://github.com/fac19/teach-fish-frontend">&lt;view code&gt;</a>
@@ -216,7 +216,7 @@
       </div>
           </div>
         </div>
-        <video class="video-mobile" autoplay loop poster="./assets/projects/adventure.png">
+        <video class="video-mobile" autoplay loop poster="./assets/projects/adventure.webp">
           <source  src="./assets/projects/adventure.mp4"
                   type="video/mp4">
           Sorry, your browser doesn't support embedded videos.
@@ -225,7 +225,7 @@
       
       <article class="projects">
         <div class="project-card">
-          <a class="project-title" target="_blank" href="juliamachadoart.netlify.app" title="Go to Julia's live website">Julia's Portfolio</a>
+          <a class="project-title" target="_blank" rel="noopener" href="juliamachadoart.netlify.app" title="Go to Julia's live website">Julia's Portfolio</a>
           <p class="project-sum">Static website designed by the artist Julia Machado to showcase work created during her art degree.</p>
           <div class="project-links">
             <a href="https://github.com/glrta/julia-machado-portfolio">&lt;view FE code&gt;</a>
@@ -245,7 +245,7 @@
           </div>
           </div>
           </div>
-          <video class="video-desktop" autoplay loop poster="./assets/projects/julia.png">
+          <video class="video-desktop" autoplay loop poster="./assets/projects/julia.webp">
             <source  src="./assets/projects/julia.mp4"
                     type="video/mp4">
             Sorry, your browser doesn't support embedded videos.
@@ -254,8 +254,7 @@
     </main>
   </section>
   <footer>
-    <p>by<a class="footer-link" target="_blank" href="https://github.com/glrta/" title="Go to Gio's GitHub page">&lt;glrta&gt</a>© 2020</p>
-    <a class="footer-link" target="_blank" href="https://github.com/glrta/portfolio" title="View this page's code">&lt;view source&gt</a>
+    <p>by<a class="footer-link" target="_blank" rel="noopener" href="https://github.com/glrta/" title="Go to Gio's GitHub page">&lt;glrta&gt</a>© 2020</p>
   </footer>
   <script src="./script.js"></script>
 </body>
