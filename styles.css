@@ -33,6 +33,20 @@ header {
   flex-direction: column;
   justify-content: center;
 }
+.navbar-icon {
+  margin: 0;
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  z-index: 999;
+  cursor: pointer;
+  visibility: hidden;
+  display: inline-block;
+  flex-shrink: 0;
+  height: 2rem;
+  width: 2rem;
+  stroke: var(--accentColor);
+}
 nav {
   padding: 2rem;
   position: absolute;
@@ -262,38 +276,77 @@ h1 {
   /* Let the icon take whatever color the parent has. */
   fill: currentColor;
 }
-footer {
-  padding: 2rem;
-  background-color: var(--accentColor);
-  text-align: center;
+.work-section {
+  position: relative;
 }
+.work-section::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 28px 28px 0 28px;
+  border-color: var(--background) transparent transparent transparent;
+  left: 50%;
+  transform: translateX(-50%) translateY(100%);
+}
+
+/* === footer section === */
+
+footer {
+  background-color: var(--accentColor);
+  padding: 4rem 2rem 2rem;
+}
+.footer-main {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  max-width: 1100px;
+}
+.footer-roadmap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-right: 2rem;
+}
+.footer-roadmap a {
+  margin-bottom: 1rem;
+}
+.footer-roadmap a:hover {
+  border-bottom: 1px solid currentColor;
+}
+.footer-CTA {
+  max-width: 161px;
+}
+/* .footer-CTA p:first-of-type {
+  margin-top: 0;
+} */
 .footer-icon {
   display: inline-block;
   /* Place the icon on the text baseline. */
   position: relative;
   /* Prevent the icon from shrinking inside a flex container. */
   flex-shrink: 0;
-  height: 2rem;
-  width: 2rem;
+  height: 1.5rem;
+  width: 1.5rem;
   /* Let the icon take whatever color the parent has. */
   fill: currentColor;
-  margin: 0 .8rem;
+  margin-right: .8rem;
 }
 .footer-icon:hover {
   fill: var(--background);
-
 }
-.footer-links {
-  padding: 2rem 0;
 
-}
-.footer-links address {
-  padding: 2rem 0 0 ;
+.footer-address a {
   font-family: 'Anton', sans-serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
   letter-spacing: 0.015em;
+  border-bottom: 1px solid currentColor;
+
 }
-.footer-links address a:hover {
+.footer-address a:hover {
   color: var(--background);
 }
 .footer-address-icon {
@@ -302,28 +355,18 @@ footer {
   position: relative;
   /* Prevent the icon from shrinking inside a flex container. */
   flex-shrink: 0;
-  height: 2rem;
-  width: 2rem;
+  height: 1.4rem;
+  width: 1.4rem;
   /* Let the icon take whatever color the parent has. */
   fill: currentColor;
 }
 .footer-address-icon:hover {
   fill: var(--background); 
 }
-.navbar-icon {
-  margin: 0;
-  position: fixed;
-  top: 2rem;
-  right: 2rem;
-  z-index: 999;
-  cursor: pointer;
-  visibility: hidden;
-  display: inline-block;
-  flex-shrink: 0;
-  height: 2rem;
-  width: 2rem;
-  stroke: var(--accentColor);
-  /* transform: rotate(180deg); */
+.copyright {
+  text-align: center;
+  margin: 2rem 0 0;
+  font-size: .6rem;
 }
 
 
