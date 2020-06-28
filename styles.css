@@ -33,20 +33,7 @@ header {
   flex-direction: column;
   justify-content: center;
 }
-.navbar-icon {
-  margin: 0;
-  position: fixed;
-  top: 2rem;
-  right: 2rem;
-  z-index: 999;
-  cursor: pointer;
-  visibility: hidden;
-  display: inline-block;
-  flex-shrink: 0;
-  height: 2rem;
-  width: 2rem;
-  stroke: var(--accentColor);
-}
+
 nav {
   padding: 2rem;
   position: absolute;
@@ -368,7 +355,20 @@ footer {
   margin: 2rem 0 0;
   font-size: .6rem;
 }
-
+.navbar-icon {
+  margin: 0;
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  z-index: 999;
+  cursor: pointer;
+  visibility: hidden;
+  display: inline-block;
+  flex-shrink: 0;
+  height: 2rem;
+  width: 2rem;
+  stroke: var(--accentColor);
+}
 
 @media screen and (min-width: 1600px) {
   h1 {
