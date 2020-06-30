@@ -176,17 +176,23 @@ h1 {
 /* === about section === */
 
 .about {
+  margin-top: 4rem;
+  width: 80vw;
   padding: 2rem;
-  margin: 0 auto;
-  /* text-align: center; */
+  background-color: var(--font);
+  color: var(--background);
+  display: grid;
+  justify-items: end;
+}
+.about article {
   max-width: 1100px;
 }
-
 .about p {
   font-weight: 300;
   font-size: 1.2rem;
 }
-.about p a {
+.about article p a {
+  color: var(--background);
   border-bottom: solid 1px currentColor;
 }
 .about p:first-of-type {
@@ -203,6 +209,7 @@ h1 {
   font-family: 'Anton', sans-serif;
   font-size: 2em;
 } */
+
 /* === work section === */
 
 .projects {
