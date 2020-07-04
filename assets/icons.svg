@@ -68,10 +68,8 @@
   </symbol>
     <symbol
     id="up"
-    width="16"
-    height="16"
-    viewBox="0 0 24 24" fill="none" stroke-width="1" stroke-linecap="square" stroke-linejoin="arcs">
-    <path d="M18 15l-6-6-6 6"/>
+    width="48" height="18" viewBox="0 0 48 18" fill="none">
+    <path d="M2 16L24 3L46 16" stroke="white" stroke-width="4"/>
   </symbol>
   
     

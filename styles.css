@@ -374,6 +374,14 @@ footer {
   font-size: 1rem;
   letter-spacing: 0.015em;
 }
+.up {
+  position: relative;
+  /* Prevent the icon from shrinking inside a flex container. */
+  flex-shrink: 0;
+  height: 2rem;
+  width: 2rem;
+  margin-right: 4rem;
+}
 .copyright {
   text-align: right;
   margin: 2rem;
@@ -436,7 +444,10 @@ footer {
     display: flex;
     flex-direction: column;
   }
-
+  .up {
+    align-self: flex-end;
+    margin-top: -1.5rem;
+  }
   /* === Mobile navbar toggle styles === */
   .social {
     flex: 50%;
