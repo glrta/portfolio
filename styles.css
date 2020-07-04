@@ -184,9 +184,6 @@ h1 {
   font-weight: 300;
   font-size: 2rem;
 }
-.about p:first-of-type {
-  max-width: 70%;
-}
 .link {
   font-weight: bold;
 }
@@ -199,6 +196,7 @@ h1 {
   letter-spacing: 0.015em;
   color: var(--accentColor);
   margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 .svg-cta {
   display: inline-block;
