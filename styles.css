@@ -207,7 +207,7 @@ h1 {
   padding: 2rem;
 
 }
-.cta:hover {
+.cta a:hover {
   font-size: 2.2rem;
 }
 /* === work section === */
