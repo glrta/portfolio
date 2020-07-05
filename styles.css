@@ -9,7 +9,7 @@
     color: var(--font);
 }
 p {
-  font-weight: 100;
+  font-weight: 300;
 }
 a {
   text-decoration: none;
@@ -169,6 +169,9 @@ h1 {
 .section-title:hover {
   font-weight: 600;
 }
+.section-title:active{
+  border-color: none;
+}
 
 /* === about section === */
 
@@ -181,7 +184,6 @@ h1 {
   justify-content: center;
 }
 .about p {
-  font-weight: 300;
   font-size: 2rem;
 }
 .ilustration {
@@ -247,7 +249,7 @@ h1 {
   text-align: right;
 }
 .project-role {
-  font-weight: 400;
+  font-weight: 100;
 }
 .project-sum {
   margin-top: 2rem;
