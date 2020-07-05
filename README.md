@@ -6,3 +6,4 @@ Built with HTML, CSS and vanilla Javascript
 
 ![screenshot](assets/screenshot.png)
 
+
