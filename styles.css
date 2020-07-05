@@ -196,16 +196,18 @@ h1 {
 .link:hover {
   background-image: linear-gradient(0deg, transparent 10%, rgba(255,41,144,1) 10%, rgba(255,41,144,1) 30%, transparent 30%);
 }
+.cta-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
 .cta {
   font-family: 'Anton', sans-serif;
   font-size: 2rem;
   letter-spacing: 0.015em;
   color: var(--accentColor);
-  margin-top: 0;
-  margin-bottom: 4rem;
+  margin: 0 2rem 4rem;
   text-align: right;
-  padding: 2rem;
-
+  max-width: 600px;
 }
 .cta a:hover {
   font-size: 2.2rem;
