@@ -175,7 +175,7 @@ h1 {
 .about {
   padding: 2rem;
   max-width: 75vw;
-  min-height: 90vh;
+  min-height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -183,6 +183,12 @@ h1 {
 .about p {
   font-weight: 300;
   font-size: 2rem;
+}
+.ilustration {
+  width: 10rem;
+  display: inline-block;
+  position: relative;
+  margin-bottom: -10px;
 }
 .link {
   font-weight: bold;
@@ -195,21 +201,15 @@ h1 {
   font-size: 2rem;
   letter-spacing: 0.015em;
   color: var(--accentColor);
-  margin-top: 4rem;
+  margin-top: 0;
   margin-bottom: 4rem;
-}
-.svg-cta {
-  display: inline-block;
-  /* Place the icon on the text baseline. */
-  position: relative;
-  /* Prevent the icon from shrinking inside a flex container. */
-  flex-shrink: 0;
-  height: 2rem;
-  width: 2rem;
-  /* Let the icon take whatever color the parent has. */
-  fill: currentColor;
-}
+  text-align: right;
+  padding: 2rem;
 
+}
+.cta:hover {
+  font-size: 2.2rem;
+}
 /* === work section === */
 
 .projects {
