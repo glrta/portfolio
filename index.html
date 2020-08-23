@@ -1,336 +1,671 @@
 <!DOCTYPE html>
 <html lang="en-gb">
-<head>
-    <meta charset="UTF-8">
-    <meta name="author" content="Giovanna L R T Aveiro">
-    <meta name="description" content="Software developer">
-    <meta name="keywords" content="developer, front-end, sofware developer">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Giovanna Aveiro">
-    <meta property="og:description" content="Software developer with a background in humanities, a knack for design and user experience.">
-    <meta name="twitter:description" content="Software developer with a background in humanities, a knack for design and user experience.">
-    <link rel="image_src" href="https://github.com/glrta/portfolio/raw/master/og-image.png">
-    <meta name="twitter:image" content="https://github.com/glrta/portfolio/raw/master/og-image.png">
-    <meta name="twitter:image:alt" content="Preview of Giovanna Aveiro's portfolio website">
-    <meta property="og:image" content="./og-image.png">
-    <meta property="og:url" content="http://giovanna.netlify.app">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:creator" content="@glrta_gio">
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <meta name="theme-color" content="hsl(331, 100%, 58%)">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="icon" href="./assets/favicon.svg">
-    <link rel="alternate icon" href="/assets/favicon.ico">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Giovanna L R T Aveiro" />
+    <meta name="description" content="Software developer" />
+    <meta name="keywords" content="developer, front-end, sofware developer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Giovanna Aveiro" />
+    <meta
+      property="og:description"
+      content="Software developer with a background in humanities, a knack for design and user experience."
+    />
+    <meta
+      name="twitter:description"
+      content="Software developer with a background in humanities, a knack for design and user experience."
+    />
+    <link
+      rel="image_src"
+      href="https://github.com/glrta/portfolio/raw/master/og-image.png"
+    />
+    <meta
+      name="twitter:image"
+      content="https://github.com/glrta/portfolio/raw/master/og-image.png"
+    />
+    <meta
+      name="twitter:image:alt"
+      content="Preview of Giovanna Aveiro's portfolio website"
+    />
+    <meta property="og:image" content="./og-image.png" />
+    <meta property="og:url" content="http://giovanna.netlify.app" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content="@glrta_gio" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="theme-color" content="hsl(331, 100%, 58%)" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <link rel="icon" href="./assets/favicon.svg" />
+    <link rel="alternate icon" href="/assets/favicon.ico" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Giovanna Aveiro</title>
-</head>
-<body class="body">
-  <header>
-      <svg class="navbar-icon svg-icon" viewBox="0 0 24 24" role="img" aria-hidden="true" focusable="false">
-        <use xlink:href="./assets/icons.svg#menu-icon"/>
+  </head>
+  <body class="body">
+    <header>
+      <svg
+        class="navbar-icon svg-icon"
+        viewBox="0 0 24 24"
+        role="img"
+        aria-hidden="true"
+        focusable="false"
+      >
+        <use xlink:href="./assets/icons.svg#menu-icon" />
       </svg>
-    <div class="menu d-none">
-      <nav class="navbar">
-        <ul>
-          <li><a id="menu-about" class="navbar-a" href="#about">about</a></li>
-          <li><a id="menu-work" class="navbar-a" href="#work">work</a></li>
-        </ul>
-      </nav>
-      <aside class="socials">
-        <div class="social">
-          <a href="https://www.linkedin.com/in/glrta/" target="_blank" rel="noopener" title="take me to Gio's LinkedIn page">Linkedin
-            <svg class="svg-icon" viewBox="0 0 24 24" role="img" aria-hidden="true" focusable="false">
-              <use xlink:href="./assets/icons.svg#linkedin"/>
-            </svg>
-          </a>
-          <p>full résumé</p>
-        </div>
-        <div class="social">
-          <a href="https://github.com/glrta" target="_blank" rel="noopener" title="take me to Gio's GitHub page">GitHub
-            <svg class="svg-icon" viewBox="0 0 24 24" role="img" aria-hidden="true" focusable="false">
-              <use xlink:href="./assets/icons.svg#github"/>
-            </svg>
-          </a>
-          <p>all my projects</p>
-        </div>
-        <div class="social">
-          <a href="https://twitter.com/glrta_gio" target="_blank" rel="noopener" title="take me to Gio's Twitter page">Twitter
-            <svg class="svg-icon" viewBox="0 0 24 24" role="img" aria-hidden="true" focusable="false">
-              <use xlink:href="./assets/icons.svg#twitter"/>
-            </svg>
-          </a>
-          <p>light thoughts</p>
-        </div>
-        <div class="social">
-          <a href="https://dev.to/glrta" target="_blank" rel="noopener" title="take me to Gio's DEV profile">dev.to
-            <svg class="svg-icon" viewBox="0 0 24 24" role="img" aria-hidden="true" focusable="false">
-              <use xlink:href="./assets/icons.svg#dev"/>
-            </svg>
-          </a>
-          <p>deep thoughts</p>
-        </div>
-        <address>
-          <a class="address" href="mailto:glrta@pm.me?subject=Let's do something interesting!&body=Hi Giovanna," target="_blank" rel="noopener" title="Say hello">glrta@pm.me
-            <svg class="svg-icon" viewBox="0 0 24 24" role="img" aria-hidden="true" focusable="false">
-              <use xlink:href="./assets/icons.svg#external"/>
-            </svg>
-          </a>
-        </address>
-      </aside>
-    </div>
-    <div class="title">
-      <h1><span>Giovanna</span> <br>
-        <span>Aveiro</span> 
+      <div class="menu d-none">
+        <nav class="navbar">
+          <ul>
+            <li><a id="menu" class="navbar-a" href="#about">about</a></li>
+            <li><a id="menu" class="navbar-a" href="#work">work</a></li>
+          </ul>
+        </nav>
+        <aside class="socials">
+          <div class="social">
+            <a
+              href="https://www.linkedin.com/in/glrta/"
+              target="_blank"
+              rel="noopener"
+              title="take me to Gio's LinkedIn page"
+              >Linkedin
+              <svg
+                class="svg-icon"
+                viewBox="0 0 24 24"
+                role="img"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <use xlink:href="./assets/icons.svg#linkedin" />
+              </svg>
+            </a>
+            <p>full résumé</p>
+          </div>
+          <div class="social">
+            <a
+              href="https://github.com/glrta"
+              target="_blank"
+              rel="noopener"
+              title="take me to Gio's GitHub page"
+              >GitHub
+              <svg
+                class="svg-icon"
+                viewBox="0 0 24 24"
+                role="img"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <use xlink:href="./assets/icons.svg#github" />
+              </svg>
+            </a>
+            <p>all my projects</p>
+          </div>
+          <div class="social">
+            <a
+              href="https://twitter.com/glrta_gio"
+              target="_blank"
+              rel="noopener"
+              title="take me to Gio's Twitter page"
+              >Twitter
+              <svg
+                class="svg-icon"
+                viewBox="0 0 24 24"
+                role="img"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <use xlink:href="./assets/icons.svg#twitter" />
+              </svg>
+            </a>
+            <p>light thoughts</p>
+          </div>
+          <div class="social">
+            <a
+              href="https://dev.to/glrta"
+              target="_blank"
+              rel="noopener"
+              title="take me to Gio's DEV profile"
+              >dev.to
+              <svg
+                class="svg-icon"
+                viewBox="0 0 24 24"
+                role="img"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <use xlink:href="./assets/icons.svg#dev" />
+              </svg>
+            </a>
+            <p>deep thoughts</p>
+          </div>
+          <address>
+            <a
+              class="address"
+              href="mailto:glrta@pm.me?subject=Let's do something interesting!&body=Hi Giovanna,"
+              target="_blank"
+              rel="noopener"
+              title="Say hello"
+              >glrta@pm.me
+              <svg
+                class="svg-icon"
+                viewBox="0 0 24 24"
+                role="img"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <use xlink:href="./assets/icons.svg#external" />
+              </svg>
+            </a>
+          </address>
+        </aside>
+      </div>
+      <div class="title">
+        <h1>
+          <span>Giovanna</span> <br />
+          <span>Aveiro</span>
         </h1>
-      <p>(she/her)</p>
-      <h2 class="tagline">software developer</h2>
-    </div>
-    <div class="actions">
-      <i class="arrow-line"></i>
-      <i class="arrow-down"></i>
-      <p class="scroll-tip">scroll</p>
-      <a class="icon download" href="./assets/giovanna-aveiro_cv.pdf" download="giovanna-aveiro_cv" title="Download CV">
-        <svg class="svg-icon" viewBox="0 0 24 24" role="img" aria-hidden="true" focusable="false">
-          <use xlink:href="./assets/icons.svg#download"/>
-        </svg>
-        download CV
-      </a>
-    </div>
-  </header>
-  <section class="section">
-    <a id="about" class="section-title" href="#">about</a>
-    <article class="about">
-      <p>I'm a software developer from Brazil, recently graduated from <a class="link" href="http://https://www.foundersandcoders.com/">Founders and Coders</a>, working and living in London.</p>
-      <p>My love for CSS, layouts and the challenge of exploring different ways to solve a problem led me to leave a career in admin and start my web development journey.</p>
-      <p>I'm interested in opportunities to further my technical growth in a collaborative team that celebrates diversity and inclusion in and outside the tech industry.</p>
-    </article>
-    <div class="cta-wrapper">
-      <address class="cta">
-        <a  href="mailto:glrta@pm.me?subject=Let's do something interesting!&body=Hi Giovanna," target="_blank" rel="noopener" title="Say hello">
-          <svg class="ilustration" viewBox="0 0 808 771" role="img" aria-hidden="true" focusable="false">
-            <use xlink:href="./assets/avatar.svg#avatar"/>
-          </svg>
-          Say hello and let's do something interesting!
+        <p>(she/her)</p>
+        <h2 class="tagline">software developer</h2>
+      </div>
+      <div class="actions">
+        <i class="arrow-line"></i>
+        <i class="arrow-down"></i>
+        <p class="scroll-tip">scroll</p>
+        <a class="icon download" href="#" title="Download CV">
+          open/download CV
         </a>
-      </address>
-    </div>
-  </section>
-  <section class="section work-section">
-    <a id="work" class="section-title" href="#">work</a>
-    <main class="work">
-
-      <article class="projects">
-        <div class="project-card">
-          <p class="project-title">Bechdel and beyond</p>
-          <p class="project-role">Developer and QA lead</p>
-          <p class="project-sum">A community-driven app that allows users to rate and find films based on gender representation on screens and behind the scenes.</p>
-          <p>Ensured over 90% API/FE  test coverage and user journeys tested with Cypress.</p>
-          <p>MVP designed and built in a team of 4 over three week-long sprints following Agile workflow.</p>
-          <div class="project-links project-links_even">
-            <a href="https://github.com/fac19/Bechdel-Beyond-backend" target="_blank" rel="noopener noreferrer" title="Go to Bechdel and beyond backend repository">&lt;BE code&gt;</a>
-            <a href="https://github.com/fac19/Bechdel-Beyond" target="_blank" rel="noopener noreferrer" title="Go to Bechdel and beyond frontend repository">&lt;FE code&gt;</a>
-            <a href="https://bechdelbeyond.netlify.app/" target="_blank" rel="noopener noreferrer" title="Go to Bechdel and beyond website">&lt;live&gt;</a>
-          </div>
-          <div class="stack">
-            <div class="stack-card">
-              <svg class="svg-stack" viewBox="0 0 26 26" role="img" aria-hidden="true" focusable="false">
-                <use xlink:href="./assets/stack.svg#material-ui"/>
-              </svg>
-              <p class="stack-key">material ui</p>
-            </div>
-            <div class="stack-card">
-              <svg class="svg-stack" viewBox="0 0 24 24" role="img" aria-hidden="true" focusable="false">
-                <use xlink:href="./assets/stack.svg#react"/>
-              </svg>
-              <p class="stack-key">react</p>
-            </div>
-            <div class="stack-card">
-              <svg class="svg-stack" viewBox="0 0 24 24" role="img" aria-hidden="true" focusable="false">
-                <use xlink:href="./assets/stack.svg#node"/>
-              </svg>
-              <p class="stack-key">node.js</p>
-            </div>
-            <div class="stack-card">
-              <svg class="svg-stack" viewBox="0 0 24 24" role="img" aria-hidden="true" focusable="false">
-                <use xlink:href="./assets/stack.svg#jest"/>
-              </svg>
-              <p class="stack-key">jest</p>
-            </div>
-            <div class="stack-card">
-              <svg class="svg-stack" viewBox="0 0 26 26" role="img" aria-hidden="true" focusable="false">
-                <use xlink:href="./assets/stack.svg#cypress"/>
-              </svg>
-              <p class="stack-key">cypress</p>
-            </div>
-            <div class="stack-card">
-              <svg class="svg-stack" viewBox="0 0 26 26" role="img" aria-hidden="true" focusable="false">
-                <use xlink:href="./assets/stack.svg#postgres"/>
-              </svg>
-              <p class="stack-key">postgresql</p>
-            </div>
-            <div class="stack-card">
-              <svg class="svg-stack" viewBox="0 0 26 26" role="img" aria-hidden="true" focusable="false">
-                <use xlink:href="./assets/stack.svg#heroku"/>
-              </svg>
-              <p class="stack-key">heroku</p>
-            </div>
-            <div class="stack-card">
-              <svg class="svg-stack" viewBox="0 0 26 26" role="img" aria-hidden="true" focusable="false">
-                <use xlink:href="./assets/stack.svg#codecov"/>
-              </svg>
-              <p class="stack-key">codecov</p>
-            </div>
-          </div>
-        </div>
-        <div class="video-desktop">
-          <video  width="100%" autoplay playsinline muted loop poster="./assets/projects/bechdel.webp">
-            <source  src="./assets/projects/bechdel.mp4"
-                    type="video/mp4">
-            Sorry, your browser doesn't support embedded videos.
-        </video>
-        </div>
+      </div>
+    </header>
+    <section class="section">
+      <a id="about" class="section-title" href="#">about</a>
+      <article class="about">
+        <p>
+          I'm a software developer from Brazil, recently graduated from
+          <a class="link" href="http://https://www.foundersandcoders.com/"
+            >Founders and Coders</a
+          >, working and living in London.
+        </p>
+        <p>
+          My love for CSS, layouts and the challenge of exploring different ways
+          to solve a problem led me to leave a career in admin and start my web
+          development journey.
+        </p>
+        <p>
+          I'm interested in opportunities to further my technical growth in a
+          collaborative team that celebrates diversity and inclusion in and
+          outside the tech industry.
+        </p>
       </article>
-
-      <article class="projects projects_odd">
-        <div class="project-card  project-card_odd">
-          <p class="project-title  project-title_odd" >Enterprise adventure</p>
-          <p class="project-role">Developer and UX/UI lead</p> 
-          <p class="project-sum">An educational web app for non-profit <a class="link" href="http://www.teachamantofish.org.uk" target="_blank" rel="noopener noreferrer">Teach a Man to Fish</a>, whose mission is to empower young people not enrolled in education in Asia, Africa and Latin America with skills to succeed in work and life.</p>
-          <p>Designed and built over three week-long sprints following Agile workflow in a team of 4.</p>
-          <p>Coordinated user testing, revised product design, ensured accessibility.</p>
-          <div class="project-links project-links_odd">
-            <a href="https://github.com/fac19/teach-fish-frontend" target="_blank" rel="noopener noreferrer" title="Go to Enterprise Adventure repository">&lt;code&gt;</a>
-            <a href="https://enterprise-adventure.netlify.app/" target="_blank" rel="noopener noreferrer" title="Go to Enterprise Adventure live website">&lt;live&gt;</a>
-          </div>
-          <div class="stack stack_odd">
-          <div class="stack-card">
-            <svg class="svg-stack" viewBox="0 0 24 24" role="img" aria-hidden="true" focusable="false">
-              <use xlink:href="./assets/stack.svg#react"/>
+      <div class="cta-wrapper">
+        <address class="cta">
+          <a
+            href="mailto:glrta@pm.me?subject=Let's do something interesting!&body=Hi Giovanna,"
+            target="_blank"
+            rel="noopener"
+            title="Say hello"
+          >
+            <svg
+              class="ilustration"
+              viewBox="0 0 808 771"
+              role="img"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <use xlink:href="./assets/avatar.svg#avatar" />
             </svg>
-            <p class="stack-key">react</p>
-          </div>
-                <div class="stack-card">
-        <svg class="svg-stack" viewBox="0 0 24 11" role="img" aria-hidden="true" focusable="false">
-          <use xlink:href="./assets/stack.svg#styled-components"/>
-        </svg>
-        <p class="stack-key">styled comp</p>
-      </div>
-          <div class="stack-card">
-            <svg class="svg-stack" viewBox="0 0 24 24" role="img" aria-hidden="true" focusable="false">
-              <use xlink:href="./assets/stack.svg#jest"/>
-            </svg>
-            <p class="stack-key">jest</p>
-          </div>
-          <div class="stack-card">
-            <svg class="svg-stack" viewBox="0 0 26 26" role="img" aria-hidden="true" focusable="false">
-              <use xlink:href="./assets/stack.svg#codecov"/>
-            </svg>
-            <p class="stack-key">codecov</p>
-        </div>
-        <div class="stack-card">
-          <svg class="svg-stack" viewBox="0 0 24 24" role="img" aria-hidden="true" focusable="false">
-            <use xlink:href="./assets/stack.svg#material-ui"/>
-          </svg>
-          <p class="stack-key">material ui</p>
-        </div>
-        <div class="stack-card">
-          <svg class="svg-stack" viewBox="0 0 26 26" role="img" aria-hidden="true" focusable="false">
-            <use xlink:href="./assets/stack.svg#figma"/>
-          </svg>
-          <p class="stack-key">figma</p>
-      </div>
-        <div class="stack-card">
-          <svg class="svg-stack" viewBox="0 0 26 26" role="img" aria-hidden="true" focusable="false">
-            <use xlink:href="./assets/stack.svg#netlify"/>
-        </svg>
-        <p class="stack-key">netlify dev</p>
-      </div>
-          </div>
-        </div>
-        <div>
-          <video class="video-mobile" autoplay playsinline muted loop poster="./assets/projects/adventure.webp">
-            <source  src="./assets/projects/adventure.mp4"
-                    type="video/mp4">
-            Sorry, your browser doesn't support embedded videos.
-          </video>
-        </div>
-      </article>
-      
-      <article class="projects">
-        <div class="project-card">
-          <p class="project-title">Julia's Portfolio</p>
-          <p class="project-role">Developer</p>
-          <p class="project-sum">A static website designed by the artist Julia Machado to showcase work created during her art degree.</p>
-          <div class="project-links project-links_even">
-            <a href="https://github.com/glrta/julia-machado-portfolio" target="_blank" rel="noopener noreferrer" title="Go to Julia's portfolio repository">&lt;code&gt;</a>
-            <a href="https://juliamachadoart.netlify.app" target="_blank" rel="noopener noreferrer" title="Go to Julia's Portfolio live website">&lt;live&gt;</a>
-          </div>
-          <div class="stack">
-            <div class="stack-card">
-              <svg class="svg-stack" viewBox="0 0 24 24" role="img" aria-hidden="true" focusable="false">
-                <use xlink:href="./assets/stack.svg#html"/>
-              </svg>
-              <p class="stack-key">html5</p>
-            </div>
-          <div class="stack-card">
-            <svg class="svg-stack" viewBox="0 0 24 24" role="img" aria-hidden="true" focusable="false">
-              <use xlink:href="./assets/stack.svg#css"/>
-            </svg>
-            <p class="stack-key">css3</p>
-          </div>
-          </div>
-        </div>
-        <div class="video-desktop">
-          <video  width="100%" autoplay playsinline muted loop poster="./assets/projects/julia.webp">
-            <source  src="./assets/projects/julia.mp4"
-                    type="video/mp4">
-            Sorry, your browser doesn't support embedded videos.
-        </video>
-        </div>
-      </article>      
-    </main>
-  </section>
-  <footer>
-    <main class=footer-main>
-      <div class="footer-CTA">
-        <p>say hello 👋 </p>
-        <address>
-          <a href="mailto:glrta@pm.me?subject=Let's do something interesting!&body=Hi Giovanna," target="_blank" rel="noopener" title="Say hello">glrta@pm.me
+            Say hello and let's do something interesting!
           </a>
         </address>
       </div>
-      <div class="footer-CTA">
-        <p>résumé</p>
-        <a href="./assets/giovanna-aveiro_cv.pdf" download="giovanna-aveiro_cv" title="Download CV">
-          CV
-          </a>
-        <a href="https://www.linkedin.com/in/glrta/" target="_blank" rel="noopener" title="take me to Gio's LinkedIn page">Linkedin
-        </a>
+    </section>
+    <section class="section work-section">
+      <a id="work" class="section-title" href="#">work</a>
+      <main class="work">
+        <article class="projects">
+          <div class="project-card">
+            <p class="project-title">Bechdel and beyond</p>
+            <p class="project-role">Software Developer and QA Lead</p>
+            <p class="project-sum">
+              A community-driven app that allows users to rate and find films
+              based on gender representation on screens and behind the scenes.
+            </p>
+            <p>
+              - React frontend that comunicates with a Rest API. Film and user's
+              data stored using PostgreSQL database.
+            </p>
+            <p>
+              - Authentication implemented with JWT and CBrypt.
+            </p>
+            <p>
+              - Ensured over 90% API/FE test coverage and user journeys tested
+              with Cypress.
+            </p>
+            <div class="project-links project-links_even">
+              <a
+                href="https://github.com/fac19/Bechdel-Beyond-backend"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Go to Bechdel and beyond backend repository"
+                >&lt;BE code&gt;</a
+              >
+              <a
+                href="https://github.com/fac19/Bechdel-Beyond"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Go to Bechdel and beyond frontend repository"
+                >&lt;FE code&gt;</a
+              >
+              <a
+                href="https://bechdelbeyond.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Go to Bechdel and beyond website"
+                >&lt;live&gt;</a
+              >
+            </div>
+            <div class="stack">
+              <div class="stack-card">
+                <svg
+                  class="svg-stack"
+                  viewBox="0 0 26 26"
+                  role="img"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <use xlink:href="./assets/stack.svg#material-ui" />
+                </svg>
+                <p class="stack-key">Material-UI</p>
+              </div>
+              <div class="stack-card">
+                <svg
+                  class="svg-stack"
+                  viewBox="0 0 24 24"
+                  role="img"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <use xlink:href="./assets/stack.svg#react" />
+                </svg>
+                <p class="stack-key">React</p>
+              </div>
+              <div class="stack-card">
+                <svg
+                  class="svg-stack"
+                  viewBox="0 0 24 24"
+                  role="img"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <use xlink:href="./assets/stack.svg#node" />
+                </svg>
+                <p class="stack-key">Node.js</p>
+              </div>
+              <div class="stack-card">
+                <svg
+                  class="svg-stack"
+                  viewBox="0 0 24 24"
+                  role="img"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <use xlink:href="./assets/stack.svg#jest" />
+                </svg>
+                <p class="stack-key">Jest</p>
+              </div>
+              <div class="stack-card">
+                <svg
+                  class="svg-stack"
+                  viewBox="0 0 26 26"
+                  role="img"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <use xlink:href="./assets/stack.svg#cypress" />
+                </svg>
+                <p class="stack-key">Cypress</p>
+              </div>
+              <div class="stack-card">
+                <svg
+                  class="svg-stack"
+                  viewBox="0 0 26 26"
+                  role="img"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <use xlink:href="./assets/stack.svg#postgres" />
+                </svg>
+                <p class="stack-key">PostgreSQL</p>
+              </div>
+              <div class="stack-card">
+                <svg
+                  class="svg-stack"
+                  viewBox="0 0 26 26"
+                  role="img"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <use xlink:href="./assets/stack.svg#heroku" />
+                </svg>
+                <p class="stack-key">Heroku</p>
+              </div>
+              <div class="stack-card">
+                <svg
+                  class="svg-stack"
+                  viewBox="0 0 26 26"
+                  role="img"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <use xlink:href="./assets/stack.svg#codecov" />
+                </svg>
+                <p class="stack-key">codecov</p>
+              </div>
+            </div>
+          </div>
+          <div class="video-desktop">
+            <video
+              width="100%"
+              autoplay
+              playsinline
+              muted
+              loop
+              poster="./assets/projects/bechdel.webp"
+            >
+              <source src="./assets/projects/bechdel.mp4" type="video/mp4" />
+              Sorry, your browser doesn't support embedded videos.
+            </video>
+          </div>
+        </article>
 
-      </div>
-      <div class="footer-CTA">
-        <p>projects</p>
-        <a href="https://github.com/glrta" target="_blank" rel="noopener" title="take me to Gio's GitHub page">GitHub
+        <article class="projects projects_odd">
+          <div class="project-card project-card_odd">
+            <p class="project-title project-title_odd">Enterprise adventure</p>
+            <p class="project-role">Software Developer and UX/UI Lead</p>
+            <p class="project-sum">
+              An educational app for non-profit
+              <a
+                class="link"
+                href="http://www.teachamantofish.org.uk"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Teach a Man to Fish</a
+              >, to empower young people not enrolled in formal education in
+              Asia, Africa and Latin America.
+            </p>
+            <p>
+              - Serverless React app using Airtable as database that doubles up
+              as a CMS.
+            </p>
+            <p>
+              - Authentication implemented with Nelify Identity.
+            </p>
+            <p>
+              - Coordinated user testing, revised product design, ensured
+              accessibility.
+            </p>
+            <p>
+              - Designed and built over three week-long sprints following Agile
+              workflow in a team of 4.
+            </p>
+            <div class="project-links project-links_odd">
+              <a
+                href="https://github.com/fac19/teach-fish-frontend"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Go to Enterprise Adventure repository"
+                >&lt;code&gt;</a
+              >
+              <a
+                href="https://enterprise-adventure.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Go to Enterprise Adventure live website"
+                >&lt;live&gt;</a
+              >
+            </div>
+            <div class="stack stack_odd">
+              <div class="stack-card">
+                <svg
+                  class="svg-stack"
+                  viewBox="0 0 24 24"
+                  role="img"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <use xlink:href="./assets/stack.svg#react" />
+                </svg>
+                <p class="stack-key">React</p>
+              </div>
+              <div class="stack-card">
+                <svg
+                  class="svg-stack"
+                  viewBox="0 0 24 11"
+                  role="img"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <use xlink:href="./assets/stack.svg#styled-components" />
+                </svg>
+                <p class="stack-key">styled-comp.</p>
+              </div>
+              <div class="stack-card">
+                <svg
+                  class="svg-stack"
+                  viewBox="0 0 24 24"
+                  role="img"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <use xlink:href="./assets/stack.svg#jest" />
+                </svg>
+                <p class="stack-key">Jest</p>
+              </div>
+              <div class="stack-card">
+                <svg
+                  class="svg-stack"
+                  viewBox="0 0 26 26"
+                  role="img"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <use xlink:href="./assets/stack.svg#codecov" />
+                </svg>
+                <p class="stack-key">codecov</p>
+              </div>
+
+              <div class="stack-card">
+                <svg
+                  class="svg-stack"
+                  viewBox="0 0 24 24"
+                  role="img"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <use xlink:href="./assets/stack.svg#material-ui" />
+                </svg>
+                <p class="stack-key">Material-UI</p>
+              </div>
+              <div class="stack-card">
+                <svg
+                  class="svg-stack"
+                  viewBox="0 0 26 26"
+                  role="img"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <use xlink:href="./assets/stack.svg#figma" />
+                </svg>
+                <p class="stack-key">Figma</p>
+              </div>
+              <div class="stack-card">
+                <svg
+                  class="svg-stack"
+                  viewBox="0 0 26 26"
+                  role="img"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <use xlink:href="./assets/stack.svg#netlify" />
+                </svg>
+                <p class="stack-key">Netlify dev</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <video
+              class="video-mobile"
+              autoplay
+              playsinline
+              muted
+              loop
+              poster="./assets/projects/adventure.webp"
+            >
+              <source src="./assets/projects/adventure.mp4" type="video/mp4" />
+              Sorry, your browser doesn't support embedded videos.
+            </video>
+          </div>
+        </article>
+
+        <article class="projects">
+          <div class="project-card">
+            <p class="project-title">Julia's Portfolio</p>
+            <p class="project-role">Software Developer</p>
+            <p class="project-sum">
+              A static website designed by the artist Julia Machado to showcase
+              work created during her art degree.
+            </p>
+            <div class="project-links project-links_even">
+              <a
+                href="https://github.com/glrta/julia-machado-portfolio"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Go to Julia's portfolio repository"
+                >&lt;code&gt;</a
+              >
+              <a
+                href="https://juliamachadoart.netlify.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Go to Julia's Portfolio live website"
+                >&lt;live&gt;</a
+              >
+            </div>
+            <div class="stack">
+              <div class="stack-card">
+                <svg
+                  class="svg-stack"
+                  viewBox="0 0 24 24"
+                  role="img"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <use xlink:href="./assets/stack.svg#html" />
+                </svg>
+                <p class="stack-key">HTML5</p>
+              </div>
+              <div class="stack-card">
+                <svg
+                  class="svg-stack"
+                  viewBox="0 0 24 24"
+                  role="img"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <use xlink:href="./assets/stack.svg#css" />
+                </svg>
+                <p class="stack-key">CSS3</p>
+              </div>
+            </div>
+          </div>
+          <div class="video-desktop">
+            <video
+              width="100%"
+              autoplay
+              playsinline
+              muted
+              loop
+              poster="./assets/projects/julia.webp"
+            >
+              <source src="./assets/projects/julia.mp4" type="video/mp4" />
+              Sorry, your browser doesn't support embedded videos.
+            </video>
+          </div>
+        </article>
+      </main>
+    </section>
+    <footer>
+      <main class="footer-main">
+        <div class="footer-CTA">
+          <p>say hello 👋</p>
+          <address>
+            <a
+              href="mailto:glrta@pm.me?subject=Let's do something interesting!&body=Hi Giovanna,"
+              target="_blank"
+              rel="noopener"
+              title="Say hello"
+              >glrta@pm.me
+            </a>
+          </address>
+        </div>
+        <div class="footer-CTA">
+          <p>résumé</p>
+          <a href="" title="Download CV" class="download">
+            CV
+          </a>
+          <a
+            href="https://www.linkedin.com/in/glrta/"
+            target="_blank"
+            rel="noopener"
+            title="take me to Gio's LinkedIn page"
+            >Linkedin
+          </a>
+        </div>
+        <div class="footer-CTA">
+          <p>projects</p>
+          <a
+            href="https://github.com/glrta"
+            target="_blank"
+            rel="noopener"
+            title="take me to Gio's GitHub page"
+            >GitHub
+          </a>
+        </div>
+        <div class="footer-CTA">
+          <p>writing</p>
+          <a
+            href="https://dev.to/glrta"
+            target="_blank"
+            rel="noopener"
+            title="take me to Gio's DEV profile"
+            >dev.to</a
+          >
+        </div>
+        <div class="footer-CTA">
+          <p>follow</p>
+          <a
+            href="https://twitter.com/glrta_gio"
+            target="_blank"
+            rel="noopener"
+            title="take me to Gio's Twitter page"
+            >Twitter
+          </a>
+        </div>
+        <a class="up" href="#" title="back to top">
+          <svg
+            viewBox="0 0 48 18"
+            role="img"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <use xlink:href="./assets/icons.svg#up" />
+          </svg>
         </a>
-      </div>
-      <div class="footer-CTA">
-        <p>writing</p>
-        <a href="https://dev.to/glrta" target="_blank" rel="noopener" title="take me to Gio's DEV profile">dev.to</a>
-      </div>
-      <div class="footer-CTA">
-        <p>follow</p>
-        <a href="https://twitter.com/glrta_gio" target="_blank" rel="noopener" title="take me to Gio's Twitter page">Twitter
-        </a>
-      </div>
-      <a class="up" href="#" title="back to top">
-        <svg  viewBox="0 0 48 18" role="img" aria-hidden="true" focusable="false">
-          <use xlink:href="./assets/icons.svg#up"/>
-        </svg>
-      </a>    
-    </main>
-    <p class="copyright">design & dev © glrta 2020</p>
-  </footer>
-  <script src="./script.js"></script>
-</body>
+      </main>
+      <p class="copyright">design & dev © glrta 2020</p>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
 </html>

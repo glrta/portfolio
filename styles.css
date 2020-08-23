@@ -1,12 +1,11 @@
-
 :root {
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    --font: hsl(0, 0%, 100%);
-    --background: #242CBF;
-    --accentColor: hsl(331, 100%, 58%);
-    background-color: var(--background);
-    color: var(--font);
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  --font: hsl(0, 0%, 100%);
+  --background: hsl(231, 96%, 43%);
+  --accentColor: hsl(331, 100%, 58%);
+  background-color: var(--background);
+  color: var(--font);
 }
 p {
   font-weight: 300;
@@ -24,10 +23,10 @@ body {
 }
 body::-webkit-scrollbar {
   width: 9px;
-  background-color: var( --background);
+  background-color: var(--background);
 }
 body::-webkit-scrollbar-thumb {
-  background-color: var( --accentColor);
+  background-color: var(--accentColor);
   border-radius: 35px;
 }
 header {
@@ -50,7 +49,7 @@ nav ul li:nth-child(2) {
   margin-top: 1rem;
 }
 .download:hover {
-  color: var(--accentColor)
+  color: var(--accentColor);
 }
 .socials {
   padding: 2rem;
@@ -59,26 +58,32 @@ nav ul li:nth-child(2) {
   position: relative;
 }
 .social a::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 .social a:hover,
 .address:hover {
-  background-image: linear-gradient(0deg, transparent 10%, rgba(255,41,144,1) 10%, rgba(255,41,144,1) 30%, transparent 30%);
+  background-image: linear-gradient(
+    0deg,
+    transparent 10%,
+    rgba(255, 41, 144, 1) 10%,
+    rgba(255, 41, 144, 1) 30%,
+    transparent 30%
+  );
 }
 .socials a {
   font-family: 'Anton', sans-serif;
   font-size: 1.5rem;
   letter-spacing: 0.015em;
-  border-bottom: solid 1px;  
+  border-bottom: solid 1px;
 }
 .socials p {
-  margin-top: .1rem;
-  padding-top: .2rem;
+  margin-top: 0.1rem;
+  padding-top: 0.2rem;
   font-weight: 100;
 }
 
@@ -169,7 +174,7 @@ h1 {
 .section-title:hover {
   font-weight: 600;
 }
-.section-title:active{
+.section-title:active {
   border-color: none;
 }
 
@@ -196,7 +201,13 @@ h1 {
   font-weight: bold;
 }
 .link:hover {
-  background-image: linear-gradient(0deg, transparent 10%, rgba(255,41,144,1) 10%, rgba(255,41,144,1) 30%, transparent 30%);
+  background-image: linear-gradient(
+    0deg,
+    transparent 10%,
+    rgba(255, 41, 144, 1) 10%,
+    rgba(255, 41, 144, 1) 30%,
+    transparent 30%
+  );
 }
 .cta-wrapper {
   display: flex;
@@ -220,7 +231,7 @@ h1 {
   display: flex;
   justify-content: center;
   padding: 4rem 2rem;
-  border-radius: 3px;;
+  border-radius: 3px;
 }
 .projects + .projects {
   margin: 4rem 0;
@@ -230,7 +241,7 @@ h1 {
 }
 .project-card {
   padding-right: 2rem;
-  max-width: 470px;
+  max-width: 545px;
 }
 .project-card_odd {
   padding-right: 0;
@@ -239,7 +250,7 @@ h1 {
 }
 .project-title {
   font-size: 3rem;
-  font-family: 'Anton', sans-serif;  
+  font-family: 'Anton', sans-serif;
   line-height: 85%;
   letter-spacing: -0.015em;
   text-align: left;
@@ -250,6 +261,7 @@ h1 {
 }
 .project-role {
   font-weight: 100;
+  font-size: 1.5rem;
 }
 .project-sum {
   margin-top: 2rem;
@@ -264,15 +276,15 @@ h1 {
   justify-content: flex-end;
 }
 .project-links_even a:nth-child(2) {
-  margin-left: .5rem;
-  margin-right: .5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 .project-links_odd a:first-child {
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
 .project-links a {
   background-color: var(--accentColor);
-  padding: .5rem;
+  padding: 0.5rem;
   border-radius: 3px;
 }
 .project-links a:hover {
@@ -316,20 +328,20 @@ video {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 3.5rem;
+  min-width: 4rem;
 }
 
 .stack-key {
   font-weight: 100;
-  font-size: .8rem;
+  font-size: 0.9rem;
   text-align: center;
 }
 .svg-stack {
   position: relative;
   /* Prevent the icon from shrinking inside a flex container. */
   flex-shrink: 0;
-  height: 2rem;
-  width: 2rem;
+  height: 3rem;
+  width: 3rem;
   /* Let the icon take whatever color the parent has. */
   fill: currentColor;
 }
@@ -387,7 +399,7 @@ footer {
 .copyright {
   text-align: right;
   margin: 2rem;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 .navbar-icon {
   margin: 0;
@@ -427,7 +439,6 @@ footer {
   }
 }
 @media screen and (max-width: 800px) {
-
   .header {
     position: relative;
   }
@@ -471,7 +482,7 @@ footer {
     flex-direction: column;
     justify-content: space-between;
     position: fixed;
-    }
+  }
   .toggle-navbar {
     text-align: right;
     padding-top: 6rem;
