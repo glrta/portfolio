@@ -3,6 +3,7 @@
   font-family: 'Roboto', sans-serif;
   --font: hsl(0, 0%, 100%);
   --background: hsl(231, 96%, 43%);
+  /* better blue to try: #017ffb */
   --accentColor: hsl(331, 100%, 58%);
   background-color: var(--background);
   color: var(--font);
