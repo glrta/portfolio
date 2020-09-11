@@ -1,13 +1,17 @@
 :root {
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
-  --font: hsl(0, 0%, 100%);
-  --background: hsl(231, 96%, 43%);
-  /* better blue to try: #017ffb */
+  --font: hsl(0, 0%, 0%);
+  /* --font: hsl(0, 0%, 100%); */
+  --background: hsl(0, 0%, 100%);
+  /* --background: hsl(231, 96%, 43%); */
   --accentColor: hsl(331, 100%, 58%);
   background-color: var(--background);
   color: var(--font);
 }
+/* * {
+  border: solid red 1px;
+} */
 p {
   font-weight: 300;
 }
@@ -49,14 +53,21 @@ nav ul li:nth-child(2) {
   writing-mode: vertical-lr;
   margin-top: 1rem;
 }
-.download:hover {
-  color: var(--accentColor);
-}
+
 .socials {
   padding: 2rem;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 .social {
   position: relative;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+.social a {
+  transition: font 0.3s ease-out;
 }
 .social a::before {
   content: '';
@@ -66,25 +77,22 @@ nav ul li:nth-child(2) {
   bottom: 0;
   left: 0;
 }
-.social a:hover,
-.address:hover {
-  background-image: linear-gradient(
-    0deg,
-    transparent 10%,
-    rgba(255, 41, 144, 1) 10%,
-    rgba(255, 41, 144, 1) 30%,
-    transparent 30%
-  );
+.social a:hover {
+  font-size: 1.3rem;
 }
-.socials a {
-  font-family: 'Anton', sans-serif;
-  font-size: 1.5rem;
-  letter-spacing: 0.015em;
-  border-bottom: solid 1px;
+.social a svg {
+  visibility: hidden;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  margin: 0 1rem;
+}
+
+.social a:hover svg {
+  visibility: visible;
+  transform: scale(1.2);
 }
 .socials p {
   margin-top: 0.1rem;
-  padding-top: 0.2rem;
   font-weight: 100;
 }
 
@@ -120,11 +128,27 @@ h1 {
 }
 
 .actions {
+  min-width: 200px;
   align-self: flex-end;
   padding: 2rem;
   display: flex;
   flex-direction: column;
   position: relative;
+  align-items: flex-end;
+}
+.button {
+  border: 1px solid black;
+  /* border-radius: 2px; */
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  transition: all 0.1s ease-out;
+}
+.button:hover,
+.button:focus {
+  box-shadow: 2px 2px 0px currentColor;
+}
+.button:active {
+  transform: scale(0.9);
 }
 .scroll-tip {
   writing-mode: vertical-lr;
@@ -199,16 +223,10 @@ h1 {
   margin-bottom: -10px;
 }
 .link {
-  font-weight: bold;
+  font-weight: 400;
 }
 .link:hover {
-  background-image: linear-gradient(
-    0deg,
-    transparent 10%,
-    rgba(255, 41, 144, 1) 10%,
-    rgba(255, 41, 144, 1) 30%,
-    transparent 30%
-  );
+  text-decoration: underline;
 }
 .cta-wrapper {
   display: flex;
@@ -377,6 +395,7 @@ footer {
   display: flex;
   flex-direction: column;
   margin: 0 2rem;
+  text-transform: uppercase;
 }
 .footer-CTA p:first-of-type {
   margin-bottom: 0;
@@ -385,7 +404,6 @@ footer {
   font-weight: 100;
 }
 .footer-CTA a {
-  font-family: 'Anton', sans-serif;
   font-size: 1rem;
   letter-spacing: 0.015em;
 }
@@ -438,8 +456,6 @@ footer {
     flex-direction: row-reverse;
     flex-wrap: wrap;
   }
-}
-@media screen and (max-width: 800px) {
   .header {
     position: relative;
   }
@@ -448,6 +464,9 @@ footer {
   }
   .d-none {
     display: none;
+  }
+  .socials {
+    flex-direction: row;
   }
   .actions {
     position: absolute;
