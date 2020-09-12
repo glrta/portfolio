@@ -55,7 +55,12 @@
   </head>
   <body class="body">
     <header>
-      <svg
+      <div aria-hidden="true" class="tip">
+        <i class="arrow-line"></i>
+        <i class="arrow-down"></i>
+        <p class="scroll-tip">scroll</p>
+      </div>
+      <!-- <svg
         class="navbar-icon svg-icon"
         viewBox="0 0 24 24"
         role="img"
@@ -63,22 +68,72 @@
         focusable="false"
       >
         <use xlink:href="./assets/icons.svg#menu-icon" />
-      </svg>
-      <div class="menu d-none">
-        <nav class="navbar">
+      </svg> -->
+      <a href="/index.html" class="logo" title="home">
+        <svg
+          class="svg-logo"
+          viewBox="0 0 23 61"
+          role="img"
+          aria-hidden="true"
+          focusable="false"
+        >
+          <use xlink:href="./assets/logo.svg#logo" />
+        </svg>
+      </a>
+      <div class="title">
+        <h1>Giovanna Aveiro,<br />software developer.</h1>
+        <p>(she/her)</p>
+      </div>
+      </div>
+      <aside class="menu d-none socials">
+        <!-- <address class="social">
+          <p>say hello</p>
+          <a
+            class="address"
+            href="mailto:glrta@pm.me?subject=Let's do something interesting!&body=Hi Giovanna,"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            title="Say hello via email"
+          >
+            <svg
+              class="svg-icon"
+              viewBox="0 0 24 24"
+              role="img"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <use xlink:href="./assets/icons.svg#mail" />
+            </svg>
+            glrta@pm.me
+          </a>
+        </address> -->
+        <!-- <nav class="navbar">
           <ul>
-            <li><a id="menu" class="navbar-a" href="#about">about</a></li>
-            <li><a id="menu" class="navbar-a" href="#work">work</a></li>
+            <li>
+              <a id="menu" class="navbar-a" href="#about">about</a>
+            </li>
+            <li>
+              <a
+                aria-hidden="true"
+                focusable="false"
+                id="menu"
+                class="navbar-a"
+                href="#work"
+                >work</a
+              >
+            </li>
           </ul>
-        </nav>
-        <aside class="socials">
+        </nav> -->
+        <div class="large">
           <div class="social">
+            <p>let's connect</p>
+
             <a
               href="https://www.linkedin.com/in/glrta/"
               target="_blank"
               rel="noopener noreferrer nofollow"
-              title="take me to Giovanna Aveiro LinkedIn page"
-              >Linkedin
+              title="Check out my full CV on Linkedin"
+            >
               <svg
                 class="svg-icon"
                 viewBox="0 0 24 24"
@@ -88,16 +143,17 @@
               >
                 <use xlink:href="./assets/icons.svg#linkedin" />
               </svg>
+              Linkedin
             </a>
-            <p>let's connect</p>
           </div>
           <div class="social">
+            <p>light thoughts</p>
             <a
               href="https://twitter.com/glrta_gio"
               target="_blank"
               rel="noopener noreferrer nofollow"
-              title="take me to Giovanna Aveiro Twitter page"
-              >Twitter
+              title="Check out my Twitter page"
+            >
               <svg
                 class="svg-icon"
                 viewBox="0 0 24 24"
@@ -107,16 +163,18 @@
               >
                 <use xlink:href="./assets/icons.svg#twitter" />
               </svg>
+              Twitter
             </a>
-            <p>light thoughts</p>
           </div>
           <div class="social">
+            <p>deep thoughts</p>
+
             <a
               href="https://dev.to/glrta"
               target="_blank"
               rel="noopener noreferrer nofollow"
-              title="take me to Giovanna Aveiro DEV profile"
-              >dev.to
+              title="Check out my articles on dev.to"
+            >
               <svg
                 class="svg-icon"
                 viewBox="0 0 24 24"
@@ -126,16 +184,17 @@
               >
                 <use xlink:href="./assets/icons.svg#dev" />
               </svg>
+              dev.to
             </a>
-            <p>deep thoughts</p>
           </div>
           <div class="social">
+            <p>more projects</p>
             <a
               href="https://github.com/glrta"
               target="_blank"
               rel="noopener noreferrer nofollow"
-              title="take me to Giovanna Aveiro GitHub page"
-              >GitHub
+              title="Discover more about what I've been up to on my GitHub page"
+            >
               <svg
                 class="svg-icon"
                 viewBox="0 0 24 24"
@@ -145,54 +204,35 @@
               >
                 <use xlink:href="./assets/icons.svg#github" />
               </svg>
+              GitHub
             </a>
-            <p>all my projects</p>
           </div>
-          <address class="social">
-            <a
-              class="address"
-              href="mailto:glrta@pm.me?subject=Let's do something interesting!&body=Hi Giovanna,"
-              target="_blank"
-              rel="noopener noreferrer nofollow"
-              title="Say hello"
-              >glrta@pm.me
-              <svg
-                class="svg-icon"
-                viewBox="0 0 24 24"
-                role="img"
-                aria-hidden="true"
-                focusable="false"
-              >
-                <use xlink:href="./assets/icons.svg#mail" />
-              </svg>
-            </a>
-          </address>
-        </aside>
-      </div>
-      <div class="title">
-        <h1>
-          Giovanna <br />
-          Aveiro
-        </h1>
-        <p>(she/her)</p>
-        <h2 class="tagline">software developer</h2>
-      </div>
-      <div class="actions">
-        <i class="arrow-line"></i>
-        <i class="arrow-down"></i>
-        <p class="scroll-tip">scroll</p>
-        <a class="download button" href="#" title="Open CV"> résumé </a>
-      </div>
+        </div>
+          <a class="download button" href="#" title="Open CV">
+            résumé
+            <svg
+              class="svg-icon"
+              viewBox="0 0 24 24"
+              role="img"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <use xlink:href="./assets/icons.svg#external" />
+            </svg>
+          </a>       
+      </aside>
     </header>
     <section class="section">
-      <a id="about" class="section-title" href="#">about</a>
-      <article class="about">
+      <h2>
+        <a id="about" class="section-title" href="#">a little bit about me</a>
+      </h2>
+      <div class="about">
         <p>
-          Hi there! I'm Giovanna, a software developer from Brazil, recently
-          graduated from
+          Hi there! I'm a software developer from Brazil 🇧🇷, recently graduated
+          from
           <a class="link" href="http://https://www.foundersandcoders.com/"
             >Founders and Coders</a
-          >, working and living in London.
+          >, working and living in London 🇬🇧.
         </p>
         <p>
           My love for CSS, layouts and the challenge of exploring different ways
@@ -204,7 +244,7 @@
           collaborative team that celebrates diversity and inclusion in and
           outside the tech industry.
         </p>
-      </article>
+      </div>
       <div class="cta-wrapper">
         <address class="cta">
           <a
@@ -228,11 +268,11 @@
       </div>
     </section>
     <section class="section work-section">
-      <a id="work" class="section-title" href="#">work</a>
+      <h2><a id="work" class="section-title" href="#">selected projects</a></h2>
       <main class="work">
         <article class="projects">
           <div class="project-card">
-            <p class="project-title">Bechdel and beyond</p>
+            <h3 class="project-title">Bechdel and beyond</h3>
             <p class="project-role">Software Developer and QA Lead</p>
             <p class="project-sum">
               A community-driven app that allows users to rate and find films
@@ -386,7 +426,9 @@
 
         <article class="projects projects_odd">
           <div class="project-card project-card_odd">
-            <p class="project-title project-title_odd">Enterprise adventure</p>
+            <h3 class="project-title project-title_odd">
+              Enterprise adventure
+            </h3>
             <p class="project-role">Software Developer and UX/UI Lead</p>
             <p class="project-sum">
               An educational app for non-profit
@@ -533,7 +575,7 @@
 
         <article class="projects">
           <div class="project-card">
-            <p class="project-title">Julia's Portfolio</p>
+            <h3 class="project-title">Julia's Portfolio</h3>
             <p class="project-role">Freelance Web Developer</p>
             <p class="project-sum">
               A static website designed by the artist Julia Machado to showcase
@@ -601,7 +643,20 @@
     <footer>
       <main class="footer-main">
         <div class="footer-CTA">
-          <p>say hello 👋</p>
+          <p>
+            say hello
+            <span>
+              <svg
+                class="svg-icon hello"
+                viewBox="0 0 315 315"
+                role="img"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <use xlink:href="./assets/icons.svg#waving-hand" />
+              </svg>
+            </span>
+          </p>
           <address>
             <a
               href="mailto:glrta@pm.me?subject=Let's do something interesting!&body=Hi Giovanna,"
