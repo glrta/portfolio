@@ -4,6 +4,7 @@
   --font: hsl(0, 0%, 0%);
   /* --font: hsl(0, 0%, 100%); */
   --background: hsl(0, 0%, 100%);
+  /* --background: hsl(0, 0%, 90%); */
   /* --background: hsl(231, 96%, 43%); */
   /* --accentColor: black; */
   --accentColor: hsl(331, 100%, 58%);
@@ -27,10 +28,12 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  margin: 0;
   scroll-behavior: smooth;
+  max-width: 1250px;
+  padding: 2rem;
+  margin: 75px auto;
 }
-body * {
+* {
   box-sizing: border-box;
 }
 body::-webkit-scrollbar {
@@ -43,44 +46,66 @@ body::-webkit-scrollbar-thumb {
 }
 header {
   display: flex;
-  height: 100vh;
+  /* height: 60vh; */
 }
-
-.logo {
-  position: fixed;
-  top: 2rem;
-  right: 2rem;
-  z-index: 999;
-}
-.svg-logo {
-  display: inline-block;
-  flex-shrink: 0;
-  height: 4rem;
-  fill: currentColor;
-}
-.svg-icon {
-  display: inline-block;
-  position: relative;
-  flex-shrink: 0;
-  height: 1.2rem;
-  width: 1.2rem;
-  fill: currentColor;
-}
-.socials {
-  padding: 2rem;
-  min-width: 200px;
+.title {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  text-align: right;
+  justify-content: center;
+  /* margin-left: 10vw; */
+}
+h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  /* line-height: 85%; */
+  /* letter-spacing: 0.015em; */
+  margin: 0;
+}
+.title p {
+  font-size: 1rem;
+}
+.logo {
+  /* position: fixed; */
+  top: 2rem;
+  /* right: 2rem; */
+  z-index: 999;
+}
+svg {
+  display: inline-block;
+  flex-shrink: 0;
+  fill: currentColor;
+}
+.svg-logo {
+  height: 5rem;
+}
+.svg-icon {
+  position: relative;
+  height: 1.2rem;
+  width: 1.2rem;
+}
+.socials {
+  /* padding: 2rem; */
+  min-width: 230px;
+  display: flex;
+  justify-items: flex-start;
+  flex-wrap: wrap;
+
+  /* flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: right; */
 }
 .social {
+  /* margin-right: 1; */
+  padding: 2rem 3rem 0 0;
   position: relative;
-  margin-bottom: 1rem;
-  text-transform: uppercase;
+  /* margin-bottom: 1.2rem; */
+  text-transform: lowercase;
 }
 .social a {
   transition: font 0.3s ease-out;
+  padding-bottom: 0.2rem;
+  border-bottom: 1px solid currentColor;
 }
 .social a::before {
   content: '';
@@ -91,37 +116,33 @@ header {
   left: 0;
 }
 .social a:hover {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 .social a svg {
   visibility: hidden;
   transition: all 0.2s ease-out;
-  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  position: absolute;
 }
 
 .social a:hover svg {
   visibility: visible;
   transform: scale(1.2);
 }
-.socials p {
-  margin-bottom: 0.1rem;
+/* .socials p {
+  margin: 0;
+  padding-top: 0.5rem;
   font-weight: 100;
-}
-.large {
-  flex: 2;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+} */
 .button {
   border: 1px solid currentColor;
-  /* border-radius: 2px; */
   padding: 0.5rem 1rem 0.5rem 1.7rem;
   text-transform: uppercase;
   transition: all 0.1s ease-out;
-  /* margin: 2rem; */
   font-size: 0.7rem;
-  align-self: flex-end;
+  /* position: absolute; */
+  /* bottom: 2rem; */
+  /* right: 2rem; */
 }
 .button svg {
   height: 0.7rem;
@@ -148,25 +169,9 @@ ul {
   padding: 0;
   margin: 0;
 }
-.title {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 2rem;
-}
-h1 {
-  font-size: calc(2rem + 2vw);
-  /* line-height: 85%; */
-  /* letter-spacing: 0.015em; */
-  margin: 0;
-}
-.title p {
-  font-size: cal(2rem + 2vw);
-}
+
 .hello {
-  animation: hello linear 1.2s;
-  animation-iteration-count: infinite;
+  animation: hello linear 1.2s infinite;
   transform-origin: 50% 100%;
   animation-fill-mode: forwards;
 }
@@ -180,47 +185,36 @@ h1 {
   }
 }
 .tip {
-  align-self: flex-end;
-  padding: 2rem;
   display: flex;
   flex-direction: column;
-  position: absolute;
-}
-.scroll-tip {
-  writing-mode: vertical-lr;
-  transform: rotate(180deg);
-  margin: 0;
-  margin-bottom: 2rem;
-  align-self: flex-end;
-  font-weight: 100;
-}
-.arrow-down {
-  align-self: flex-end;
-  border: solid currentColor;
-  border-width: 0 2px 2px 0;
-  padding: 3px;
-  transform: rotate(45deg);
-  margin: 0 6px 20px 0;
-}
-.arrow-line {
-  width: 70px;
-  border: solid 1px currentColor;
-  transform: rotate(90deg);
-  position: absolute;
-  right: 6px;
-  top: 3px;
+  animation: scroll linear 1.2s infinite;
+  align-items: center;
+  width: 5px;
+  height: 100px;
 }
 
+.scroll-tip {
+  writing-mode: vertical-lr;
+  font-weight: 100;
+  margin-top: 2rem;
+}
+@keyframes scroll {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+}
 .section-title {
-  font-weight: 300;
-  border-bottom: solid 1px;
-  align-self: flex-start;
-  padding-left: 2rem;
+  font-weight: 500;
+  /* border-bottom: solid 1px; */
   padding-top: 2rem;
 }
 
 .section {
-  min-height: 100vh;
+  padding: 5rem 0;
 }
 .section-title:hover {
   font-weight: 600;
@@ -232,15 +226,17 @@ h1 {
 /* === about section === */
 
 .about {
-  padding: 2rem;
-  max-width: 75vw;
-  min-height: 50vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  columns: 2;
+  column-gap: 4rem;
+  padding-top: 3rem;
 }
 .about p {
-  font-size: 1.2rem;
+  margin: 0;
+  line-height: 2rem;
+  margin-bottom: 2rem;
+}
+.about p span {
+  font-weight: 500;
 }
 .ilustration {
   width: 10rem;
@@ -275,7 +271,7 @@ h1 {
 .projects {
   display: flex;
   justify-content: center;
-  padding: 4rem 2rem;
+  /* padding: 4rem 2rem; */
   border-radius: 3px;
 }
 .projects + .projects {
@@ -379,12 +375,8 @@ video {
 }
 .svg-stack {
   position: relative;
-  /* Prevent the icon from shrinking inside a flex container. */
-  flex-shrink: 0;
   height: 3rem;
   width: 3rem;
-  /* Let the icon take whatever color the parent has. */
-  fill: currentColor;
 }
 .work-section {
   position: relative;
@@ -417,7 +409,7 @@ footer {
   display: flex;
   flex-direction: column;
   margin: 0 2rem;
-  text-transform: uppercase;
+  text-transform: lowercase;
 }
 .footer-CTA p:first-of-type {
   margin-bottom: 0;
@@ -431,7 +423,6 @@ footer {
 }
 .up {
   position: relative;
-  flex-shrink: 0;
   height: 2rem;
   width: 2rem;
   margin-right: 4rem;
@@ -442,7 +433,13 @@ footer {
   font-size: 0.8rem;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 700px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  .about {
+    columns: unset;
+  }
   .about p {
     font-size: 1.5rem;
   }
@@ -454,24 +451,36 @@ footer {
     flex-direction: row-reverse;
     flex-wrap: wrap;
   }
-  .header {
-    position: relative;
-  }
+
   .navbar-icon {
     visibility: visible;
   }
   .d-none {
     display: none;
   }
+  /* .marquee {
+    display: flex;
+    overflow: hidden;
+  }
   .socials {
-    flex-direction: row;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 10s linear infinite;
+    margin: 0;
+    animation-delay: 0.5s;
+    padding-left: 100%;
   }
-  .tip {
-    right: 0;
+  .socials .social:hover {
+    animation-play-state: paused;
   }
-  .scroll-tip {
-    transform: rotate(0);
-  }
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  } */
   .about p {
     font-size: 1rem;
   }
@@ -485,46 +494,6 @@ footer {
     margin-top: -1.5rem;
   }
   /* === Mobile navbar toggle styles === */
-  .social {
-    flex: 50%;
-  }
-  .toggle-navbar-icon {
-    stroke: var(--font);
-  }
-  .toggle-menu {
-    z-index: 998;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    background-color: var(--accentColor);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: fixed;
-  }
-  .toggle-navbar {
-    text-align: right;
-    padding-top: 6rem;
-    position: static;
-  }
-  .toggle-navbar ul li {
-    margin-bottom: 1rem;
-    font-size: 5rem;
-  }
-  .toggle-navbar ul li:nth-child(2) {
-    writing-mode: horizontal-tb;
-    transform: rotate(0deg);
-  }
-  .toggle-socials {
-    align-self: flex-start;
-    padding-top: 0;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .lockScroll {
-    overflow: hidden;
-  }
 }
 
 @media screen and (max-width: 350px) {
@@ -533,8 +502,5 @@ footer {
   } */
   h2 {
     font-size: 1rem;
-  }
-  .toggle-navbar ul li {
-    font-size: 3rem;
   }
 }

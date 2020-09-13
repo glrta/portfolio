@@ -3,7 +3,7 @@ const menu = document.querySelector('.menu');
 const toggleNavbar = document.querySelector('.navbar');
 const toggleSocials = document.querySelector('.socials');
 const body = document.querySelector('.body');
-const menuItem = document.querySelectorAll('#menu');
+// const menuItem = document.querySelectorAll('#menu');
 const download = document.querySelectorAll('.download');
 
 const toggleMenu = () => {
@@ -20,15 +20,15 @@ const controlOverflow = () => {
   } else body.classList.remove('lockScroll');
 };
 
-menuIcon.addEventListener('click', toggleMenu);
+// menuIcon.addEventListener('click', toggleMenu);
 
-menuItem.forEach((item) => {
-  item.addEventListener('click', (event) => {
-    if (menu.classList.contains('toggle-menu')) {
-      toggleMenu();
-    }
-  });
-});
+// menuItem.forEach((item) => {
+//   item.addEventListener('click', (event) => {
+//     if (menu.classList.contains('toggle-menu')) {
+//       toggleMenu();
+//     }
+//   });
+// });
 
 download.forEach((item) => {
   item.addEventListener('click', () => {
