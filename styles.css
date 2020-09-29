@@ -2,7 +2,8 @@
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
   --font: hsl(0, 0%, 100%);
-  --background: hsl(231, 96%, 43%);
+  --background: #041549;
+  /* --background: hsl(231, 96%, 43%); */
   /* better blue to try: #017ffb */
   --accentColor: hsl(331, 100%, 58%);
   background-color: var(--background);
