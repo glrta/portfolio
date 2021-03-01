@@ -159,6 +159,11 @@ h1 {
   font-weight: 300;
   margin-top: 1rem;
 }
+
+.actions a:hover {
+  color: var(--accentColor);
+}
+
 @keyframes scroll {
   0%,
   100% {
