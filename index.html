@@ -148,24 +148,25 @@
             </a>
             <p>deep thoughts</p>
           </div>
-          <address>
+          <address class="social">
             <a
-              class="address"
+            
               href="mailto:glrta@pm.me?subject=Let's do something interesting!&body=Hi Giovanna,"
               target="_blank"
               rel="noopener noreferrer nofollow"
               title="Say hello"
               >glrta@pm.me
               <svg
-                class="svg-icon"
-                viewBox="0 0 24 24"
+                class="svg-icon hello"
+                viewBox="0 0 315 315"
                 role="img"
                 aria-hidden="true"
                 focusable="false"
               >
-                <use xlink:href="./assets/icons.svg#external" />
+                <use xlink:href="./assets/icons.svg#waving-hand" />
               </svg>
             </a>
+            <p>say hello</p>
           </address>
         </aside>
       </div>
@@ -178,12 +179,18 @@
         <h2 class="tagline">software developer</h2>
       </div>
       <div class="actions">
-        <i class="arrow-line"></i>
-        <i class="arrow-down"></i>
-        <p class="scroll-tip">scroll</p>
-        <a class="icon download" href="#" title="Download CV">
+        <div aria-hidden="true" class="tip">
+          <svg viewBox="0 0 8 84" role="img" aria-hidden="true" focusable="false">
+            <use xlink:href="./assets/icons.svg#scroll" />
+          </svg>
+          <p class="scroll-tip">scroll</p>
+        </div>
+        <a class="icon download d-none" href="#" title="Download CV">
           open/download CV
         </a>
+      </div>
+     
+      
       </div>
     </header>
     <section class="section">
@@ -192,7 +199,11 @@
         <p>
           Hi there! I'm Giovanna, a software developer from Brazil, recently
           graduated from
-          <a class="link" href="http://https://www.foundersandcoders.com/"
+          <a 
+            class="link" 
+            href="https://www.foundersandcoders.com"
+            target="_blank"
+            title="Open Founders and Coders website"
             >Founders and Coders</a
           >, working and living in London.
         </p>
@@ -603,7 +614,19 @@
     <footer>
       <main class="footer-main">
         <div class="footer-CTA">
-          <p>say hello 👋</p>
+          <p>say hello 
+            <!-- <span> -->
+              <svg
+                class="svg-icon hello"
+                viewBox="0 0 315 315"
+                role="img"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <use xlink:href="./assets/icons.svg#waving-hand" />
+              </svg>
+            <!-- </span> -->
+          </p>
           <address>
             <a
               href="mailto:glrta@pm.me?subject=Let's do something interesting!&body=Hi Giovanna,"
